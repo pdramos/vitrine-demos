@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vitrine — o site da sua loja | diagnóstico gratuito</title>
+<meta name="description" content="Diagnóstico gratuito: veja onde o seu comércio aparece na internet — com fontes para conferir. E um site simples, rápido, com botão de WhatsApp e cardápio ou catálogo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Archivo:wght@400;500;600&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo-base.css">
+<link rel="stylesheet" href="estilo-secoes.css">
+</head>
+<body>
+
+<header class="topo">
+  <a class="marca" href="#topo">Vitrine<span class="ast">*</span></a>
+  <nav>
+    <a href="#evidencia">Evidência</a>
+    <a href="#site">O site</a>
+    <a href="#preco">Preço</a>
+    <a href="#duvidas">Dúvidas</a>
+  </nav>
+  <a class="btn btn-wa topo-wa" id="wa-topo" href="#" target="_blank" rel="noopener">Falar no WhatsApp</a>
+</header>
+
+<main id="topo">
+
+  <!-- HERO: a promessa + a ferramenta -->
+  <section class="hero">
+    <div class="hero-txt">
+      <p class="kicker rv">estúdio web para comércio de bairro</p>
+      <h1 class="rv">Sem site,<br>você <em>não existe</em><br>na internet.</h1>
+      <p class="lead rv">Fazemos sites simples e rápidos para padarias, lanchonetes, papelarias, oficinas e estúdios: fotos reais, botão de WhatsApp e cardápio ou catálogo. Antes de falar em preço, provamos: <strong>verificamos onde o seu comércio aparece online</strong> — e mostramos as fontes.</p>
+    </div>
+
+    <div class="hero-diag">
+      <div class="diag-card" id="diagnostico">
+        <div class="diag-head">
+          <span class="diag-tag">diagnóstico gratuito</span>
+          <h2>Confira onde a sua loja aparece</h2>
+          <p>Digite o nome do comércio. Buscamos no nosso banco verificado e mostramos os links reais — para você conferir um a um.</p>
+        </div>
+        <form id="f-diag" autocomplete="off">
+          <input id="in-nome" type="text" placeholder="ex.: Papelaria Maninho" aria-label="Nome do comércio" required>
+          <div class="diag-chips" id="chips-cidade" role="group" aria-label="Filtrar por cidade"></div>
+          <button class="btn btn-full" type="submit">Fazer diagnóstico →</button>
+        </form>
+        <div id="resultado" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 01 EVIDÊNCIA -->
+  <section id="evidencia">
+    <div class="sec-label rv"><span class="num">01</span> evidência antes de promessa</div>
+    <h2 class="rv">A gente verifica antes de vender.</h2>
+    <p class="sec-copy rv">Toda conversa começa com uma checagem: buscamos o comércio no Google, catalogamos onde ele aparece (diretórios, telelistas, notícias) e verificamos se existe site próprio. Esse é o diagnóstico — e ele chega com as fontes, para você abrir e conferir.</p>
+
+    <div class="lista-wrap rv">
+      <div class="lista-head">
+        <div class="lista-chips" id="chips-lista" role="group" aria-label="Cidades verificadas"></div>
+        <p class="lista-count" id="lista-count"></p>
+      </div>
+      <ul class="lista" id="lista"></ul>
+      <p class="lista-foot">*Verificado em setembro de 2026, a partir de fontes públicas. “Sem site” = nenhuma busca pelo nome da loja + cidade devolveu um site próprio.</p>
+    </div>
+  </section>
+
+  <!-- 02 O SITE -->
+  <section id="site">
+    <div class="sec-label rv"><span class="num">02</span> o que você recebe</div>
+    <div class="site-grid">
+      <div class="site-mock rv" aria-label="Exemplo de site para uma padaria local">
+        <div class="mock-top"><b>Padaria Exemplo</b><span>cardápio · contato</span></div>
+        <div class="mock-foto">a foto da sua fachada</div>
+        <div class="mock-acoes">
+          <span class="mock-wa">pedir no WhatsApp</span>
+          <span class="mock-see">ver cardápio</span>
+        </div>
+        <ul class="mock-card">
+          <li><span>Pão na chapa</span><i></i><span>3,50</span></li>
+          <li><span>Café coado</span><i></i><span>4,00</span></li>
+          <li><span>Quentão</span><i></i><span>9,00</span></li>
+          <li><span>Bolo do dia</span><i></i><span>12,00</span></li>
+        </ul>
+        <div class="mock-foot">seg–sáb · 7h às 19h · Rua dos example, 123</div>
+      </div>
+      <div class="site-txt">
+        <h2 class="rv">Um site que trabalha como a sua loja.</h2>
+        <ul class="inclui">
+          <li class="rv"><b>Página rápida no celular do cliente</b><span>o cliente chega do Google ou do WhatsApp — a página abre num segundo, em qualquer aparelho</span></li>
+          <li class="rv"><b>Fotos reais, suas</b><span>nada de foto de banco: a sua fachada, o seu balcão, o produto</span></li>
+          <li class="rv"><b>Botão de WhatsApp em todo lugar</b><span>o cliente pede, pergunta e fala com você num toque</span></li>
+          <li class="rv"><b>Cardápio ou catálogo editável</b><span>você muda preço e item sem depender de ninguém</span></li>
+          <li class="rv"><b>Pedidos online, quando fizer sentido</b><span>para quem entrega ou tem balcão — nada de recurso que empurra a página</span></li>
+          <li class="rv"><b>Seu domínio, seu nome</b><span>ex.: <i>sualoja.com.br</i> — registrado em nome de você</span></li>
+        </ul>
+        <p class="mock-nota rv">Acima: exemplo de layout. O seu fica com a sua cara, as suas fotos e as suas palavras.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 PREÇO -->
+  <section id="preco">
+    <div class="sec-label rv"><span class="num">03</span> preço claro</div>
+    <h2 class="rv">Você sabe o preço antes de começar.</h2>
+    <p class="sec-copy rv">Proposta por escrito, com o escopo fechado e o valor fechado. Sem surpresa no final do processo.</p>
+    <div class="preco-tabela rv">
+      <div class="preco-linha">
+        <div class="preco-nome">Site de uma página</div>
+        <div class="preco-desc">nome, fotos, horários, botão de WhatsApp, contato</div>
+        <div class="preco-val">a partir de<br><b>R$ 900</b></div>
+      </div>
+      <div class="preco-linha destaque">
+        <div class="preco-nome">Site com cardápio ou catálogo</div>
+        <div class="preco-desc">tudo do site de uma página + lista de produtos editável por você</div>
+        <div class="preco-val">a partir de<br><b>R$ 1.500</b></div>
+      </div>
+      <div class="preco-linha">
+        <div class="preco-nome">Acompanhamento mensal</div>
+        <div class="preco-desc">hospedagem, domínio, pequenas mudanças quando você pedir</div>
+        <div class="preco-val">a partir de<br><b>R$ 45/mês</b></div>
+      </div>
+      <p class="preco-nota">Faixas de referência — o valor exato é fechado por escrito em cada proposta, antes de qualquer trabalho. Aceitamos parcelamento.</p>
+    </div>
+  </section>
+
+  <!-- 04 DÚVIDAS -->
+  <section id="duvidas">
+    <div class="sec-label rv"><span class="num">04</span> as perguntas que todo dono faz</div>
+    <h2 class="rv">Dúvidas.</h2>
+    <div class="faq">
+      <details class="rv" open>
+        <summary>Já tenho Instagram. Preciso de site?</summary>
+        <p>Instagram é uma vitrine boa — mas é uma vitrine <em>alugada</em>: as regras, o alcance e até o que aparece estão nas mãos deles. O site é seu: quem encontra a loja no Google ou no WhatsApp cai na página que <em>você</em> controla. E quando alguém pesquisa “nome da sua loja + sua cidade”, quem aparece é você — não o diretório.</p>
+      </details>
+      <details class="rv">
+        <summary>Meu comércio é só do bairro. Alguém busca a gente online?</summary>
+        <p>Sim. “Padaria perto de mim”, “papelaria 24h”, “tatuagem {cidade}” — todo dia. O Google decide o que aparece. Hoje, quando alguém busca o seu nome, aparece a telelista. Com site próprio, aparece você.</p>
+      </details>
+      <details class="rv">
+        <summary>Em quanto tempo o site fica no ar?</summary>
+        <p>Em geral, de 2 a 4 semanas, conforme o escopo. A data fica na proposta.</p>
+      </details>
+      <details class="rv">
+        <summary>Quem fica dono do site e do domínio?</summary>
+        <p>Você, desde o dia um. A gente constrói, entrega as chaves e o domínio fica registrado no seu nome. Se um dia você quiser levar tudo para outro lugar, leva.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="final">
+    <h2 class="rv">Vamos ver onde a sua loja aparece online?</h2>
+    <p class="rv">Leva dez segundos. As fontes chegam junto — para você conferir.</p>
+    <div class="final-acoes rv">
+      <a class="btn btn-full btn-lg" href="#diagnostico">Fazer o diagnóstico gratuito</a>
+      <a class="btn btn-wa btn-lg" id="wa-final" href="#" target="_blank" rel="noopener">ou falar no WhatsApp</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p><b>Vitrine</b> — estúdio de sites para comércio de bairro.</p>
+  <p>*Nome provisório do estúdio. Dados verificados em setembro de 2026 a partir de fontes públicas (diretórios, telelistas, notícias). Confirme as informações antes de entrar em contato com qualquer negócio.</p>
+</footer>
+
+<script src="dados.js"></script>
+<script src="demos_publicados.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
