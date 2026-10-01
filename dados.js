@@ -39,7 +39,9 @@ const LEADS = [
     "l": "https://restaurantguru.com.br/Moreira-Lanches-Belo-Horizonte-4",
     "u": ""
    }
-  ]
+  ],
+  "cel": "(31) 97351-9391",
+  "ig": "https://instagram.com/moreiralanchesbh"
  },
  {
   "n": "Lanchonete Guanas",
@@ -56,7 +58,8 @@ const LEADS = [
     "l": "https://www.econodata.com.br/consulta-empresa/04732755000131-lanchonete-guanas-ltda",
     "u": ""
    }
-  ]
+  ],
+  "em": "contop@waymail.com.br"
  },
  {
   "n": "Livraria e Papelaria Candeia",
@@ -77,7 +80,9 @@ const LEADS = [
     "l": "https://www.solutudo.com.br/empresas/mg/belo-horizonte/papelarias?pagina=18",
     "u": ""
    }
-  ]
+  ],
+  "cel": "(31) 99237-1701",
+  "ig": "https://instagram.com/candeiabh"
  },
  {
   "n": "Papelaria Mil Cores",
@@ -111,7 +116,9 @@ const LEADS = [
     "l": "https://www.instagram.com/centralmateriaisc/",
     "u": ""
    }
-  ]
+  ],
+  "cel": "(31) 98404-8912",
+  "ig": "https://instagram.com/centralmateriaisc"
  },
  {
   "n": "JM Materiais Para Construção",
@@ -124,7 +131,9 @@ const LEADS = [
     "l": "https://mechameaqui.com.br/v2/jm-materiais-para-construcao-belo-horizonte-mg",
     "u": ""
    }
-  ]
+  ],
+  "cel": "(31) 98862-1586",
+  "em": "lucienetamorim@gmail.com"
  },
  {
   "n": "Tattoo Brasil BH - Tatuagem e Piercing",
@@ -145,7 +154,8 @@ const LEADS = [
     "l": "https://am.maptons.com/p/1715267848",
     "u": ""
    }
-  ]
+  ],
+  "cel": "(31) 98659-9168"
  },
  {
   "n": "New Look Tattoo Studio",
@@ -166,7 +176,9 @@ const LEADS = [
     "l": "https://www.calameo.com/books/00483570873a1da23b6d9",
     "u": ""
    }
-  ]
+  ],
+  "cel": "(31) 98236-3749",
+  "ig": "https://instagram.com/newlooktattoostudio"
  },
  {
   "n": "Daiss Rulous Tattoo Studio",
@@ -179,7 +191,8 @@ const LEADS = [
     "l": "https://daiss-rulous-tattoo-studio.ueniweb.com/",
     "u": ""
    }
-  ]
+  ],
+  "cel": "(31) 99939-4760"
  },
  {
   "n": "Diesel Materiais",

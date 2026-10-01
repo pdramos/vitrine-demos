@@ -1,6 +1,6 @@
 // Slugs dos sites-demo já publicados no GitHub Pages.
 // Gerado automaticamente pelo deploy — não editar à mão.
-const DEMOS = [
+window.DEMOS = [
   'calavera-tatoo-arte-e-estilo',
   'central-materiais-de-constru-o',
   'companhia-do-lanche',

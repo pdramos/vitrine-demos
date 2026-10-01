@@ -38,7 +38,7 @@ function slugDemo(nome){
 }
 
 function demoUrl(nome){
-  if (window.DEMOS && DEMOS.indexOf(slugDemo(nome)) !== -1)
+  if (window.DEMOS && window.DEMOS.indexOf(slugDemo(nome)) !== -1)
     return 'https://pdramos.github.io/vitrine-demos/' + slugDemo(nome) + '/';
   return null;
 }
