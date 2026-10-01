@@ -1,76 +1,113 @@
 <!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Calavera Tatoo Arte e Estilo — Curitiba</title>
-<meta name="description" content="Calavera Tatoo Arte e Estilo em Curitiba. Horários, endereço e pedidos pelo WhatsApp.">
+<meta name="description" content="Calavera Tatoo Arte e Estilo em Curitiba. Endereço, telefone, horários e pedidos pelo WhatsApp.">
 <style>
-:root{--ink:#17140f;--paper:#faf8f4;--line:#e7e1d5;--acc:#d96a2b;--ok:#2f8f4e}
-*{box-sizing:border-box}body{margin:0;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55}
-.wrap{max-width:960px;margin:0 auto;padding:0 20px}
-header{padding:64px 0 28px;border-bottom:1px solid var(--line)}
-.kicker{text-transform:uppercase;letter-spacing:.14em;font-size:12px;color:var(--acc);font-weight:700}
-h1{font-size:clamp(30px,6vw,46px);margin:.25em 0 .1em;letter-spacing:-.02em}
-.sub{color:#6b6355;font-size:17px;margin:0}
-.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
-.badge{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 12px;font-size:13px}
-.badge b{color:var(--ok)}
-.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
-.btn{text-decoration:none;font-weight:700;border-radius:12px;padding:14px 22px;font-size:16px;display:inline-flex;align-items:center;gap:8px}
-.btn.wa{background:#25d366;color:#fff}
-.btn.ghost{border:1px solid var(--line);color:var(--ink);background:#fff}
-section{padding:40px 0;border-bottom:1px solid var(--line)}
-h2{font-size:22px;margin:0 0 14px;letter-spacing:-.01em}
-.grid{display:grid;grid-template-columns:1.2fr 1fr;gap:24px;align-items:start}
+:root{--ink:#121014;--paper:#f7f6f8;--line:#e3e1e8;--acc:#7b3f9e;--ok:#2f8f4e;--muted:#7d7788}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55}
+a{color:inherit}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+.kicker{text-transform:uppercase;letter-spacing:.16em;font-size:12px;font-weight:700}
+.hero{position:relative;min-height:440px;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero .bg{position:absolute;inset:0;background-size:cover;background-position:center}
+.hero .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,8,6,.25) 0%,rgba(10,8,6,.5) 55%,rgba(10,8,6,.85) 100%)}
+.hero .inner{position:relative;width:100%;padding:44px 20px 34px}
+.hero .kicker{color:#d3aef0}
+.hero h1{font-size:clamp(34px,7vw,58px);margin:.15em 0 .1em;letter-spacing:-.02em;text-shadow:0 2px 18px rgba(0,0,0,.35)}
+.hero .sub{font-size:18px;color:#f2ede4;margin:0;max-width:580px}
+.hero .badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.hero .badge{border:1px solid rgba(255,255,255,.35);background:rgba(20,16,12,.35);backdrop-filter:blur(6px);border-radius:999px;padding:6px 12px;font-size:13px}
+.hero .badge b{color:#8fe6b0}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+.btn{text-decoration:none;font-weight:700;border-radius:12px;padding:14px 22px;font-size:16px;display:inline-flex;align-items:center;gap:8px;transition:transform .12s}
+.btn:hover{transform:translateY(-2px)}
+.btn.wa{background:#25d366;color:#fff;box-shadow:0 6px 20px rgba(37,211,102,.35)}
+.btn.ghost{border:1px solid rgba(255,255,255,.5);color:#fff;background:rgba(20,16,12,.25)}
+section{padding:44px 0;border-bottom:1px solid var(--line)}
+h2{font-size:24px;margin:0 0 14px;letter-spacing:-.01em}
+.grid{display:grid;grid-template-columns:1.25fr 1fr;gap:26px;align-items:start}
 @media(max-width:720px){.grid{grid-template-columns:1fr}}
-.map{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#eee;height:300px}
+.map{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#e9e4da;height:300px}
 .map iframe{width:100%;height:100%;border:0;display:block}
-.info p{margin:10px 0}.info .lbl{text-transform:uppercase;font-size:11px;letter-spacing:.12em;color:#9a9184;display:block;margin-top:16px}
-.foto{border:1px dashed var(--acc);border-radius:14px;padding:40px 24px;text-align:center;background:#fff7f0}
-.foto .ph{font-size:40px}.foto h3{margin:.4em 0 .2em}.foto p{color:#7a6f60;margin:0}
-.foto img{max-width:100%;border-radius:10px;margin-top:10px}
+.info .lbl{text-transform:uppercase;font-size:11px;letter-spacing:.12em;color:var(--muted);display:block;margin-top:18px}
+.info .lbl:first-child{margin-top:0}
+.info p{margin:4px 0 0;font-size:16px}
 .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px}
-footer{padding:34px 0 60px;color:#8a8172;font-size:14px}
-.concepto{background:#17140f;color:#f4efe6;border-radius:14px;padding:22px;margin-top:6px}
-.concepto b{color:#ffb27a}
+.concepto{background:var(--ink);color:#f4efe6;border-radius:14px;padding:22px;margin-top:16px}
+.concepto b{color:#d3aef0}
+.concepto p{margin:10px 0 0}
+.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+@media(max-width:560px){.gal{grid-template-columns:1fr}}
+.shot{position:relative;border-radius:14px;overflow:hidden;border:1px solid var(--line);aspect-ratio:4/3;background:#000}
+.shot img{width:100%;height:100%;object-fit:cover;display:block}
+.shot .cap{position:absolute;left:0;right:0;bottom:0;padding:24px 12px 10px;font-size:13px;color:#fff;background:linear-gradient(0deg,rgba(0,0,0,.72),transparent)}
+.shot.you{background:repeating-linear-gradient(45deg,#fff,#fff 12px,#faf6f0 12px,#faf6f0 24px);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:18px}
+.shot.you .ph{font-size:38px}
+.shot.you h3{margin:.3em 0 .2em;font-size:16px;color:var(--acc)}
+.shot.you p{margin:0;font-size:13px;color:var(--muted)}
+.galnote{font-size:12px;color:var(--muted);margin-top:12px}
+footer{padding:36px 0 60px;color:var(--muted);font-size:14px}
+footer a{color:var(--acc)}
 </style></head><body>
-<header><div class="wrap">
-  <div class="kicker">seu comércio, na internet</div>
-  <h1>Calavera Tatoo Arte e Estilo</h1>
-  <p class="sub">estúdio de tatuagem · Curitiba</p>
-  <div class="badges">
-    <span class="badge"><b>✓</b> no mapa</span>
-    <span class="badge"><b>✓</b> com telefone</span>
-    <span class="badge"><b>✓</b> WhatsApp 1 toque</span>
+<header class="hero">
+  <div class="bg" style="background-image:url('https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=1600&q=80')"></div>
+  <div class="inner wrap">
+    <div class="kicker">estúdio de tatuagem & piercing</div>
+    <h1>Calavera Tatoo Arte e Estilo</h1>
+    <p class="sub">Arte na pele, feito com técnica, esterilização e o estilo que é seu. Agende sua sessão.</p>
+    <div class="badges">
+      <span class="badge"><b>✓</b> no mapa</span>
+      <span class="badge"><b>✓</b> com telefone</span>
+      <span class="badge"><b>✓</b> WhatsApp 1 toque</span>
+      <span class="badge"><b>✓</b> portfólio em destaque</span>
+    </div>
+    <div class="cta">
+      <a class="btn wa" href="https://wa.me/5541988887777?text=Ol%C3%A1%21%20Vi%20o%20site%20de%20demonstra%C3%A7%C3%A3o%20do%20Calavera%20Tatoo%20Arte%20e%20Estilo%20que%20voc%C3%AAs%20montaram.%20Podem%20deixar%20pronto%20com%20as%20minhas%20fotos%3F%20Quanto%20fica%3F" target="_blank" rel="noopener">💬 Chamar no WhatsApp</a>
+      <a class="btn ghost" href="#galeria">Ver a galeria</a>
+    </div>
   </div>
-  <div class="cta">
-    <a class="btn wa" href="https://wa.me/5541988887777?text=Ol%C3%A1%21%20Acabei%20de%20ver%20o%20site%20que%20voc%C3%AAs%20montaram%20de%20exemplo%20pro%20meu%20neg%C3%B3cio%20%28Calavera%20Tatoo%20Arte%20e%20Estilo%29.%20Voc%C3%AAs%20publicam%20isso%20de%20verdade%3F%20Quanto%20fica%20pra%20ficar%20pronto%20com%20minhas%20fotos%3F" target="_blank" rel="noopener">🚀 Eu quero esse site de verdade</a>
-    <a class="btn ghost" href="#foto">Ver as fotos da loja</a>
-  </div>
-</div></header>
+</header>
+
 <section><div class="wrap grid">
   <div>
-    <h2>Como a sua loja fica online</h2>
+    <h2>Seu estilo, marcado pra sempre</h2>
+    <div class="card"><p style="margin:0;font-size:16px">Do flash à arte personalizada, cada pele é um projeto. Estúdio limpo, material esterilizado e um portfólio que mostra o que a sua mão faz.</p></div>
     <div class="concepto">
-      <p>Esta é a <b>versão de demonstração</b> do site da <b>Calavera Tatoo Arte e Estilo</b>. Já está tudo aqui: nome, endereço real, mapa do ponto exato e o botão de WhatsApp que abre direto pro número da loja.</p>
-      <p>O que falta pra ser o site de verdade: <b>as fotos da sua fachada e do seu produto</b> — e a sua cara no resto da página.</p>
+      <p><b>Como fica seu site de verdade:</b> esta página é a <b>prévia</b> do site do <b>Calavera Tatoo Arte e Estilo</b>. Já está tudo aqui — o nome, o endereço real, o mapa do ponto exato, os horários e o botão que abre direto no WhatsApp da casa.</p>
+      <p>O próximo passo é só um: <b>enviar as fotos reais da sua fachada e do seu produto</b>. Trocamos a prévia pelas suas fotos e publicamos no ar, num endereço fixo seu para compartilhar onde quiser.</p>
     </div>
   </div>
   <div class="info">
-    <span class="lbl">Endereço</span><p>—</p>
-    <span class="lbl">Telefone</span><p><a href="tel:4133338420">(41) 3333-8420</a></p>
-    <span class="lbl">Horário</span><p>veja no site</p>
-    <span class="lbl">Cidade</span><p>Curitiba</p>
+    <div class="card" style="height:100%">
+      <span class="lbl">Endereço</span><p> — Curitiba</p>
+      <span class="lbl">Telefone</span><p><a href="tel:4133338420">(41) 3333-8420</a></p>
+      <span class="lbl">Horário</span><p>veja no local</p>
+      <span class="lbl">Cidade</span><p>Curitiba</p>
+    </div>
   </div>
 </div></section>
+
 <section><div class="wrap">
-  <h2>Onde a Calavera Tatoo Arte e Estilo fica</h2>
-  <div class="map"><iframe loading="lazy" src="https://www.google.com/maps?q=-25.4295963,-49.2712724&z=17&output=embed" title="Mapa da Calavera Tatoo Arte e Estilo"></iframe></div>
+  <h2>Onde o Calavera Tatoo Arte e Estilo fica</h2>
+  <div class="map"><iframe loading="lazy" src="https://www.google.com/maps?q=Calavera%20Tatoo%20Arte%20e%20Estilo%20Curitiba&output=embed" title="Mapa do Calavera Tatoo Arte e Estilo"></iframe></div>
 </div></section>
+<section id="galeria"><div class="wrap">
+  <h2>O portfólio do seu estúdio</h2>
+  <div class="shot"><img loading="lazy" src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=900&q=80" alt="exemplo Calavera Tatoo Arte e Estilo"><div class="cap">Exemplo de como fica</div></div><div class="shot"><img loading="lazy" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=900&q=80" alt="exemplo Calavera Tatoo Arte e Estilo"><div class="cap">Exemplo de como fica</div></div><div class="shot you"><div class="ph">📷</div><h3>Aqui entra a SUA foto</h3><p>Fachada, balcão, produto — as suas fotos, com a sua cara.</p></div><div class="shot you"><div class="ph">✨</div><h3>E mais as suas</h3><p>No site de verdade a galeria fica toda com a identidade da sua loja.</p></div>
+  <p class="galnote">Estas imagens são um exemplo de como o portfólio do seu estúdio fica. No site de verdade entram as fotos das suas peças e do seu espaço.</p>
+</div></section>
+
 <section><div class="wrap">
-  <h2>A sua loja em fotos</h2>
-  <div class="foto"><div class="ph">📷</div><h3>Aqui entra a foto da sua fachada</h3><p>Ninguém publicou fotos da sua loja online ainda. No site de verdade, colocamos a fachada, o balcão e o produto — as suas fotos, com a sua cara.</p></div>
+  <div class="card" style="background:var(--paper);text-align:center;padding:34px 24px">
+    <h2 style="margin-bottom:8px">Gostou do resultado?</h2>
+    <p style="max-width:560px;margin:0 auto 18px;color:var(--muted)">Com as suas fotos reais e a sua cara, este vira o site oficial do <b style="color:var(--ink)">Calavera Tatoo Arte e Estilo</b> — publicado no ar, rápido de encontrar no Google e compartilhável em 1 toque.</p>
+    <a class="btn wa" href="https://wa.me/5541988887777?text=Ol%C3%A1%21%20Vi%20o%20site%20de%20demonstra%C3%A7%C3%A3o%20do%20Calavera%20Tatoo%20Arte%20e%20Estilo%20que%20voc%C3%AAs%20montaram.%20Podem%20deixar%20pronto%20com%20as%20minhas%20fotos%3F%20Quanto%20fica%3F" target="_blank" rel="noopener" style="justify-content:center">Quero esse site de verdade →</a>
+  </div>
 </div></section>
+
 <footer><div class="wrap">
-  <p><b>Calavera Tatoo Arte e Estilo</b> — Curitiba. Este é um site de demonstração montado pela Vitrine. Se quiser, a gente finaliza com as suas fotos e publica de verdade.</p>
-  <p style="margin-top:8px">Feito por Vitrine · <a href="https://wa.me/5541988887777" style="color:var(--acc)">falar com a gente</a></p>
+  <p><b>Calavera Tatoo Arte e Estilo</b> — Curitiba. Página de demonstração da Vitrine. A gente finaliza com as suas fotos e publica de verdade.</p>
+  <p style="margin-top:8px">Feito pela Vitrine · <a href="https://wa.me/5541988887777?text=Ol%C3%A1%21%20Vi%20o%20site%20de%20demonstra%C3%A7%C3%A3o%20do%20Calavera%20Tatoo%20Arte%20e%20Estilo%20que%20voc%C3%AAs%20montaram.%20Podem%20deixar%20pronto%20com%20as%20minhas%20fotos%3F%20Quanto%20fica%3F">falar com a gente</a></p>
 </div></footer>
 </body></html>

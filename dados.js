@@ -18,7 +18,11 @@ const LEADS = [
     "l": "https://cnpjcheck.com.br/empresa/lanchonete-nossa-senhora-de-fatima-ltda-companhia-do-lanche-07125531000150",
     "u": ""
    }
-  ]
+  ],
+  "e": "Rua Padre Eustáquio, 2635 - CEP 30720-100",
+  "b": "Padre Eustáquio",
+  "h": "Seg a Sex 06h-19h15; Sáb 06h-14h; Dom fechado",
+  "ig": "lanchespontocerto"
  },
  {
   "n": "Moreira Lanches",
@@ -41,7 +45,10 @@ const LEADS = [
    }
   ],
   "cel": "(31) 97351-9391",
-  "ig": "https://instagram.com/moreiralanchesbh"
+  "ig": "https://instagram.com/moreiralanchesbh",
+  "e": "Avenida Santos Dumont, 577 - CEP 30111-040",
+  "b": "Centro",
+  "h": "05h às 21h"
  },
  {
   "n": "Lanchonete Guanas",
@@ -59,7 +66,9 @@ const LEADS = [
     "u": ""
    }
   ],
-  "em": "contop@waymail.com.br"
+  "em": "contop@waymail.com.br",
+  "e": "Avenida Otacílio Negrão de Lima, 3333, letra B - CEP 31365-450",
+  "b": "Pampulha"
  },
  {
   "n": "Livraria e Papelaria Candeia",
@@ -82,7 +91,10 @@ const LEADS = [
    }
   ],
   "cel": "(31) 99237-1701",
-  "ig": "https://instagram.com/candeiabh"
+  "ig": "https://instagram.com/candeiabh",
+  "e": "Rua Espírito Santo, 1553, loja 5 - CEP 30160-035",
+  "b": "Lourdes",
+  "h": "Seg a Sex 7h-18h; Sáb 8h-12h30"
  },
  {
   "n": "Papelaria Mil Cores",
@@ -99,7 +111,11 @@ const LEADS = [
     "l": "https://wanderboat.ai/local-businesses/brazil/regi%C3%A3o-geogr%C3%A1fica-imediata-de-belo-horizonte/papelaria-mil-cores/YgR_wD-aQUShBqIZC9ASVw",
     "u": ""
    }
-  ]
+  ],
+  "e": "Avenida Guarapari, 886 - CEP 31560-000",
+  "b": "Santa Amélia",
+  "h": "Seg a Sex 7h-20h; Sáb 8h-19h",
+  "ig": "papelaria.milcores"
  },
  {
   "n": "Central Materiais de Construção",
@@ -118,7 +134,9 @@ const LEADS = [
    }
   ],
   "cel": "(31) 98404-8912",
-  "ig": "https://instagram.com/centralmateriaisc"
+  "ig": "https://instagram.com/centralmateriaisc",
+  "e": "Avenida Augusto de Lima, 556 - CEP 30190-006",
+  "b": "Centro"
  },
  {
   "n": "JM Materiais Para Construção",
@@ -133,7 +151,9 @@ const LEADS = [
    }
   ],
   "cel": "(31) 98862-1586",
-  "em": "lucienetamorim@gmail.com"
+  "em": "lucienetamorim@gmail.com",
+  "e": "Rua Alcina Lima Drummond, 293 - CEP 30660-304",
+  "b": "Diamante (Barreiro)"
  },
  {
   "n": "Tattoo Brasil BH - Tatuagem e Piercing",
@@ -155,7 +175,10 @@ const LEADS = [
     "u": ""
    }
   ],
-  "cel": "(31) 98659-9168"
+  "cel": "(31) 98659-9168",
+  "e": "Avenida Elísio de Brito, 280 - CEP 31060-470",
+  "b": "Boa Vista",
+  "h": "Ter a Sex 10h-20h; Sáb 10h-15h; Dom e Seg fechado"
  },
  {
   "n": "New Look Tattoo Studio",
@@ -178,7 +201,9 @@ const LEADS = [
    }
   ],
   "cel": "(31) 98236-3749",
-  "ig": "https://instagram.com/newlooktattoostudio"
+  "ig": "https://instagram.com/newlooktattoostudio",
+  "e": "Praça São Dimas, 561 - CEP 30710-000",
+  "b": "Serrano"
  },
  {
   "n": "Daiss Rulous Tattoo Studio",
@@ -192,7 +217,9 @@ const LEADS = [
     "u": ""
    }
   ],
-  "cel": "(31) 99939-4760"
+  "cel": "(31) 99939-4760",
+  "e": "Rua José Lopes Muradas, 106 - CEP 31742-084",
+  "b": "Montes Claros (região norte de BH)"
  },
  {
   "n": "Diesel Materiais",
@@ -338,4 +365,3 @@ const LEADS = [
   ]
  }
 ];
-const DATA_VERIFICACAO = "setembro de 2026";
