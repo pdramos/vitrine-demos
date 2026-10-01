@@ -120,7 +120,7 @@ const HASH_ADMIN = 'ee89be84559ca7a3190086050503266ff16fa589646f6406432076a704bc
 const K_SESS = 'vit_admin_ok';
 
 function norm(s){return (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')}
-function slugify(s){return (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'')}
+function slugify(s){return (s||'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'')}
 
 async function sha256hex(txt){
   const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(txt));
