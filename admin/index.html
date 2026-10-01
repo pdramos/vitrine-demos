@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Admin — Vitrine</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0f1115; --panel:#171a21; --panel2:#1d212b; --line:#2a2f3a;
+  --txt:#e8eaf0; --mut:#9aa1b0; --acc:#4f8cff; --ok:#3ddc84; --warn:#ffb020;
+  --acc-dim:rgba(79,140,255,.15);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--txt);font-family:Archivo,system-ui,sans-serif;font-size:15px}
+a{color:var(--acc)}
+.wrap{max-width:1060px;margin:0 auto;padding:28px 20px 60px}
+.mono{font-family:'Spline Sans Mono',monospace}
+
+/* login */
+#login{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px}
+.login-card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:34px;width:100%;max-width:400px}
+.login-card h1{font-size:20px;margin:0 0 4px}
+.login-card p{color:var(--mut);font-size:13.5px;margin:0 0 20px}
+.login-card input{width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--txt);font-size:15px;outline:none}
+.login-card input:focus{border-color:var(--acc)}
+.login-card button{width:100%;margin-top:12px;padding:12px;border:0;border-radius:10px;background:var(--acc);color:#fff;font-weight:600;font-size:15px;cursor:pointer}
+.login-card button:disabled{opacity:.5;cursor:wait}
+.err{color:#ff6b6b;font-size:13px;margin-top:10px;min-height:16px}
+.back{display:inline-block;margin-bottom:16px;color:var(--mut);font-size:13px;text-decoration:none}
+.back:hover{color:var(--txt)}
+
+/* topo painel */
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:22px;flex-wrap:wrap}
+.topbar h1{font-size:19px;margin:0}
+.topbar h1 span{color:var(--mut);font-weight:400;font-size:14px;margin-left:8px}
+.topbar .acoes{display:flex;gap:8px}
+.btn-sm{padding:8px 14px;border-radius:9px;border:1px solid var(--line);background:var(--panel);color:var(--txt);font-size:13px;cursor:pointer;text-decoration:none;display:inline-block}
+.btn-sm:hover{border-color:var(--acc)}
+.btn-sm.prim{background:var(--acc);border-color:var(--acc);color:#fff;font-weight:600}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:20px}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.stat b{font-size:24px;display:block}
+.stat span{color:var(--mut);font-size:12.5px}
+
+/* filtros */
+.filtros{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px;align-items:center}
+.filtros input{flex:1;min-width:220px;padding:11px 14px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--txt);font-size:14.5px;outline:none}
+.filtros input:focus{border-color:var(--acc)}
+.chip{padding:7px 13px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--mut);font-size:13px;cursor:pointer;white-space:nowrap}
+.chip.on{background:var(--acc-dim);border-color:var(--acc);color:var(--txt)}
+
+/* lista */
+ul.lista-admin{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.item{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:15px 18px;display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.item .q{min-width:0}
+.item .nome{font-size:16px;font-weight:600}
+.item .meta{color:var(--mut);font-size:13px;margin-top:3px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.tag{font-size:11.5px;padding:2px 9px;border-radius:999px;border:1px solid var(--line);color:var(--mut)}
+.tag.cat{color:var(--txt);border-color:var(--line);background:var(--panel2)}
+.tag.ok{color:var(--ok);border-color:rgba(61,220,132,.35)}
+.tag.no{color:var(--warn);border-color:rgba(255,176,32,.35)}
+.item .links{display:flex;gap:8px;flex-wrap:wrap}
+.lnk{padding:8px 13px;border-radius:9px;font-size:13px;text-decoration:none;border:1px solid var(--line);color:var(--txt);background:var(--panel2)}
+.lnk:hover{border-color:var(--acc)}
+.lnk.wa{background:rgba(61,220,132,.12);border-color:rgba(61,220,132,.4);color:var(--ok)}
+.lnk.copy{cursor:pointer}
+.vazio{color:var(--mut);text-align:center;padding:40px 0}
+.copy-ok{color:var(--ok)!important}
+@media(max-width:640px){.item{flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body>
+
+<div id="login">
+  <div class="login-card">
+    <h1>Área administrativa</h1>
+    <p>Painel interno do estúdio. Acesso restrito — digite a senha de administrador.</p>
+    <form id="f-login">
+      <input id="in-senha" type="password" placeholder="Senha de administrador" autocomplete="current-password" required>
+      <button id="b-entrar" type="submit">Entrar</button>
+    </form>
+    <div class="err" id="l-err"></div>
+    <p style="margin:18px 0 0"><a class="back" href="../">← voltar para a vitrine</a></p>
+  </div>
+</div>
+
+<div id="painel" style="display:none">
+  <div class="wrap">
+    <div class="topbar">
+      <h1>Sites criados<span id="cont">0 lojas</span></h1>
+      <div class="acoes">
+        <a class="btn-sm" href="../">Vitrine pública</a>
+        <button class="btn-sm" id="b-sair">Sair</button>
+      </div>
+    </div>
+
+    <div class="stats" id="stats"></div>
+
+    <div class="filtros">
+      <input id="f-busca" type="text" placeholder="Buscar por parte do nome… (ex.: maninho, lanche, tattoo)">
+    </div>
+    <div class="filtros" id="f-cidades"></div>
+    <div class="filtros" id="f-cats" style="margin-bottom:24px"></div>
+
+    <ul class="lista-admin" id="lista"></ul>
+    <p class="vazio" id="vazio" style="display:none">Nenhum site encontrado com esses filtros.</p>
+  </div>
+</div>
+
+<script src="../dados.js"></script>
+<script src="../demos_publicados.js"></script>
+<script>
+const HASH_ADMIN = 'ee89be84559ca7a3190086050503266ff16fa589646f6406432076a704bc52ff';
+const K_SESS = 'vit_admin_ok';
+
+function norm(s){return (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')}
+function slugify(s){return (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'')}
+
+async function sha256hex(txt){
+  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(txt));
+  return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,'0')).join('');
+}
+
+const $ = s=>document.querySelector(s);
+const DEMOS = new Set(window.DEMOS||[]);
+let fCidade = null, fCat = null;
+
+function render(){
+  const q = norm($('#f-busca').value);
+  const lista = $('#lista'); lista.innerHTML='';
+  let n=0;
+  const leads = (window.LEADS||[]).map(l=>({...l, _slug:slugify(l.n)}));
+  leads.sort((a,b)=>a.n.localeCompare(b.n,'pt-BR'));
+  for(const l of leads){
+    const tem = DEMOS.has(l._slug);
+    if(!tem) continue; // só sites publicados
+    if(fCidade && l.c!==fCidade) continue;
+    if(fCat && l.cat!==fCat) continue;
+    if(q && !norm(l.n).includes(q) && !norm(l.c).includes(q)) continue;
+    n++;
+    const url = `../${l._slug}/`;
+    const msg = `Olá! Vi o site de demonstração do ${l.n} que vocês montaram. Podem deixar pronto com as minhas fotos? Quanto fica?`;
+    let ddd = null;
+    for(const campo of [l.cel, l.t]){
+      const d = (campo||'').replace(/\D/g,'');
+      if(d && (d[0]==='9' || d.length>=10)){ ddd = d; break; }
+    }
+    const wa = ddd ? `https://wa.me/55${ddd}?text=${encodeURIComponent(msg)}` : null;
+    const li = document.createElement('li');
+    li.className='item';
+    li.innerHTML = `
+      <div class="q">
+        <div class="nome">${l.n}</div>
+        <div class="meta">
+          <span>${l.c}</span>
+          ${l.b?`<span>· ${l.b}</span>`:''}
+          <span class="tag cat">${l.cat||'—'}</span>
+          <span class="tag ok">no ar</span>
+        </div>
+      </div>
+      <div class="links">
+        <a class="lnk" href="${url}" target="_blank" rel="noopener">Abrir site ↗</a>
+        <button class="lnk copy" data-url="${url}">Copiar link</button>
+        ${wa?`<a class="lnk wa" href="${wa}" target="_blank" rel="noopener">WhatsApp 💬</a>`:`<span class="lnk" style="opacity:.4;cursor:default" title="Sem celular no lead">sem celular</span>`}
+      </div>`;
+    lista.appendChild(li);
+  }
+  $('#vazio').style.display = n? 'none':'block';
+  $('#cont').textContent = n + (n===1?' site':' sites');
+  // delegacao de copiar
+  lista.querySelectorAll('.copy').forEach(b=>{
+    b.onclick = async ()=>{
+      try{ await navigator.clipboard.writeText(location.origin + b.dataset.url.replace(/^\.\.\//,'/')); }
+      catch(e){ prompt('Copie o link:', location.origin + b.dataset.url.replace(/^\.\.\//,'/')); }
+      const old='Copiar link'; b.textContent='Copiado ✓'; b.classList.add('copy-ok');
+      setTimeout(()=>{b.textContent=old;b.classList.remove('copy-ok')},1400);
+    };
+  });
+}
+
+function renderStats(){
+  const leads=(window.LEADS||[]).filter(l=>DEMOS.has(slugify(l.n)));
+  const cidades=[...new Set(leads.map(l=>l.c))];
+  const cats=[...new Set(leads.map(l=>l.cat))];
+  $('#stats').innerHTML = `
+    <div class="stat"><b>${leads.length}</b><span>sites publicados</span></div>
+    <div class="stat"><b>${cidades.length}</b><span>cidades</span></div>
+    <div class="stat"><b>${cats.length}</b><span>categorias</span></div>
+    <div class="stat"><b>${leads.filter(l=>l.t).length}</b><span>com telefone</span></div>`;
+  const fc=$('#f-cidades'); fc.innerHTML='';
+  const allC=chip('Todas',null); fc.appendChild(allC);
+  cidades.sort().forEach(c=>{const b=chip(c,c); b.onclick=()=>{fCidade=c; syncChips(fc); render()}; fc.appendChild(b)});
+  const fcat=$('#f-cats'); fcat.innerHTML='';
+  const allK=chip('Todas',null); fcat.appendChild(allK);
+  cats.sort().forEach(c=>{const b=chip(c,c); b.onclick=()=>{fCat=c; syncChips(fcat); render()}; fcat.appendChild(b)});
+  function syncChips(el){[...el.children].forEach(x=>x.classList.remove('on'))}
+}
+
+function chip(label,val){
+  const b=document.createElement('button');
+  b.className='chip'+(val===null?' on':'');
+  b.textContent=label;
+  if(val===null){
+    b.onclick=()=>{fCidade=null;fCat=null;syncAll();render()};
+  }
+  return b;
+}
+function syncAll(){[...$('#f-cidades').children].forEach(x=>x.classList.remove('on'));[...$('#f-cats').children].forEach(x=>x.classList.remove('on'))}
+
+function entrar(){
+  $('#login').style.display='none';
+  $('#painel').style.display='block';
+  renderStats();
+  render();
+}
+function sair(){
+  sessionStorage.removeItem(K_SESS);
+  location.reload();
+}
+
+$('#f-busca').addEventListener('input',render);
+$('#b-sair').addEventListener('click',sair);
+$('#f-login').addEventListener('submit', async (e)=>{
+  e.preventDefault();
+  const b=$('#b-entrar'); b.disabled=true; b.textContent='Verificando…';
+  try{
+    const h=await sha256hex($('#in-senha').value);
+    if(h===HASH_ADMIN){
+      sessionStorage.setItem(K_SESS,'1');
+      entrar();
+    } else {
+      $('#l-err').textContent='Senha incorreta. Tente de novo.';
+    }
+  }catch(err){
+    $('#l-err').textContent='Falha ao verificar. Recarregue e tente de novo.';
+  }finally{ b.disabled=false; b.textContent='Entrar'; }
+});
+
+if(sessionStorage.getItem(K_SESS)==='1'){ entrar(); }
+</script>
+</body>
+</html>
