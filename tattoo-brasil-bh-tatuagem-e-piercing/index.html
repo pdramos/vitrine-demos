@@ -1,113 +1,130 @@
 <!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Tattoo Brasil BH - Tatuagem e Piercing — Belo Horizonte</title>
-<meta name="description" content="Tattoo Brasil BH - Tatuagem e Piercing em Belo Horizonte. Endereço, telefone, horários e pedidos pelo WhatsApp.">
+<meta name="description" content="Tatuagem &amp; Piercing · BH Tattoo Brasil BH - Tatuagem e Piercing em Belo Horizonte: Estúdio de tatuagem e piercing em Belo Horizonte: do fine line ao blackwork, com materiais descartáveis e agendamento por sessão.">
+<meta property="og:title" content="Tattoo Brasil BH - Tatuagem e Piercing">
+<meta property="og:description" content="Tatuagem &amp; Piercing · BH">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anton:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#121014;--paper:#f7f6f8;--line:#e3e1e8;--acc:#7b3f9e;--ok:#2f8f4e;--muted:#7d7788}
+:root{
+  --bg:#0A0A0A; --ink:#F2F0EA; --acc:#E63946; --acc2:#F2F0EA;
+  --soft:#eee; --line:#ddd; --glow:rgba(230,57,70,.22);
+  --fd:'Anton',serif; --fb:'Manrope',sans-serif;
+}
 *{box-sizing:border-box}
-body{margin:0;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--fb);font-size:clamp(15px,.95rem + .3vw,17px);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
 a{color:inherit}
-.wrap{max-width:980px;margin:0 auto;padding:0 20px}
-.kicker{text-transform:uppercase;letter-spacing:.16em;font-size:12px;font-weight:700}
-.hero{position:relative;min-height:440px;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
-.hero .bg{position:absolute;inset:0;background-size:cover;background-position:center}
-.hero .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,8,6,.25) 0%,rgba(10,8,6,.5) 55%,rgba(10,8,6,.85) 100%)}
-.hero .inner{position:relative;width:100%;padding:44px 20px 34px}
-.hero .kicker{color:#d3aef0}
-.hero h1{font-size:clamp(34px,7vw,58px);margin:.15em 0 .1em;letter-spacing:-.02em;text-shadow:0 2px 18px rgba(0,0,0,.35)}
-.hero .sub{font-size:18px;color:#f2ede4;margin:0;max-width:580px}
-.hero .badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
-.hero .badge{border:1px solid rgba(255,255,255,.35);background:rgba(20,16,12,.35);backdrop-filter:blur(6px);border-radius:999px;padding:6px 12px;font-size:13px}
-.hero .badge b{color:#8fe6b0}
-.hero .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
-.btn{text-decoration:none;font-weight:700;border-radius:12px;padding:14px 22px;font-size:16px;display:inline-flex;align-items:center;gap:8px;transition:transform .12s}
+h1,h2,h3{font-family:var(--fd);line-height:1.05;margin:0;font-weight:700}
+.wrap{max-width:1080px;margin:0 auto;padding:0 clamp(18px,4vw,40px)}
+section{padding-block:clamp(3rem,7vw,6rem)}
+.kick{font-family:var(--fb);text-transform:uppercase;letter-spacing:.18em;font-size:12px;font-weight:600;opacity:.75}
+h2{font-size:clamp(1.9rem,1.4rem + 2.4vw,3rem);margin-bottom:clamp(1.4rem,3vw,2.4rem)}
+.btn{display:inline-block;padding:14px 26px;border-radius:8px;font-weight:700;font-size:15px;text-decoration:none;border:2px solid var(--ink);transition:transform .15s ease, box-shadow .15s ease}
 .btn:hover{transform:translateY(-2px)}
-.btn.wa{background:#25d366;color:#fff;box-shadow:0 6px 20px rgba(37,211,102,.35)}
-.btn.ghost{border:1px solid rgba(255,255,255,.5);color:#fff;background:rgba(20,16,12,.25)}
-section{padding:44px 0;border-bottom:1px solid var(--line)}
-h2{font-size:24px;margin:0 0 14px;letter-spacing:-.01em}
-.grid{display:grid;grid-template-columns:1.25fr 1fr;gap:26px;align-items:start}
-@media(max-width:720px){.grid{grid-template-columns:1fr}}
-.map{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#e9e4da;height:300px}
-.map iframe{width:100%;height:100%;border:0;display:block}
-.info .lbl{text-transform:uppercase;font-size:11px;letter-spacing:.12em;color:var(--muted);display:block;margin-top:18px}
-.info .lbl:first-child{margin-top:0}
-.info p{margin:4px 0 0;font-size:16px}
-.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px}
-.concepto{background:var(--ink);color:#f4efe6;border-radius:14px;padding:22px;margin-top:16px}
-.concepto b{color:#d3aef0}
-.concepto p{margin:10px 0 0}
-.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
-@media(max-width:560px){.gal{grid-template-columns:1fr}}
-.shot{position:relative;border-radius:14px;overflow:hidden;border:1px solid var(--line);aspect-ratio:4/3;background:#000}
-.shot img{width:100%;height:100%;object-fit:cover;display:block}
-.shot .cap{position:absolute;left:0;right:0;bottom:0;padding:24px 12px 10px;font-size:13px;color:#fff;background:linear-gradient(0deg,rgba(0,0,0,.72),transparent)}
-.shot.you{background:repeating-linear-gradient(45deg,#fff,#fff 12px,#faf6f0 12px,#faf6f0 24px);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:18px}
-.shot.you .ph{font-size:38px}
-.shot.you h3{margin:.3em 0 .2em;font-size:16px;color:var(--acc)}
-.shot.you p{margin:0;font-size:13px;color:var(--muted)}
-.galnote{font-size:12px;color:var(--muted);margin-top:12px}
-footer{padding:36px 0 60px;color:var(--muted);font-size:14px}
-footer a{color:var(--acc)}
-</style></head><body>
-<header class="hero">
-  <div class="bg" style="background-image:url('https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=1600&q=80')"></div>
-  <div class="inner wrap">
-    <div class="kicker">estúdio de tatuagem & piercing</div>
-    <h1>Tattoo Brasil BH - Tatuagem e Piercing</h1>
-    <p class="sub">Arte na pele, feito com técnica, esterilização e o estilo que é seu. Agende sua sessão.</p>
-    <div class="badges">
-      <span class="badge"><b>✓</b> no mapa</span>
-      <span class="badge"><b>✓</b> com telefone</span>
-      <span class="badge"><b>✓</b> WhatsApp 1 toque</span>
-      <span class="badge"><b>✓</b> portfólio em destaque</span>
-    </div>
-    <div class="cta">
-      <a class="btn wa" href="https://wa.me/5541988887777?text=Ol%C3%A1%21%20Vi%20o%20site%20de%20demonstra%C3%A7%C3%A3o%20do%20Tattoo%20Brasil%20BH%20-%20Tatuagem%20e%20Piercing%20que%20voc%C3%AAs%20montaram.%20Podem%20deixar%20pronto%20com%20as%20minhas%20fotos%3F%20Quanto%20fica%3F" target="_blank" rel="noopener">💬 Chamar no WhatsApp</a>
-      <a class="btn ghost" href="#galeria">Ver a galeria</a>
-    </div>
-  </div>
-</header>
+.btn.acc{background:var(--acc);border-color:var(--acc);color:#fff}
+.btn.ghost{background:transparent}
+.map{border-radius:12px;overflow:hidden;border:1px solid var(--line)}
+.map iframe{width:100%;height:340px;border:0;display:block}
+footer{padding:34px 0 56px;font-size:13px;opacity:.7;border-top:1px solid var(--line)}
+.mcat{font-size:13px;text-transform:uppercase;letter-spacing:.16em;font-weight:700;margin:clamp(1.6rem,3vw,2.4rem) 0 .7rem;opacity:.85}
+.menu .mi{display:flex;align-items:baseline;gap:10px;padding:.45rem 0}
+.menu .mi span:first-child{font-weight:600;white-space:nowrap}
+.menu .mi .dots{flex:1;border-bottom:2px dotted var(--line);transform:translateY(-4px);min-width:24px}
+.menu .mi em{font-style:normal;font-weight:700;white-space:nowrap}
+.menu .mi small{display:block;flex-basis:100%;opacity:.7;font-size:13px}
+.menu .mi{flex-wrap:wrap}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px}
+.tile{border:1px solid var(--line);border-radius:10px;padding:16px;background:var(--soft)}
+.tile b{display:block;font-size:15px;margin-bottom:4px}
+.tile small{opacity:.7;font-size:13px;line-height:1.45;display:block}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips .chip{border:2px solid var(--ink);border-radius:999px;padding:7px 16px;font-weight:600;font-size:13.5px}
+.artists{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}
+.artist{border:1px solid var(--line);border-radius:12px;padding:18px;background:var(--soft)}
+.artist b{font-size:16px;display:block;margin-bottom:2px}
+.artist small{opacity:.7;font-size:13px;display:block;margin-bottom:10px}
+.artist .tag{display:inline-block;font-size:11.5px;border:1px solid var(--line);border-radius:999px;padding:3px 10px;margin:2px 4px 0 0}
+.infogrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
+.info-card{border:1px solid var(--line);border-radius:12px;padding:18px;background:var(--soft)}
+.info-card .lbl{font-size:11px;text-transform:uppercase;letter-spacing:.14em;opacity:.6;display:block;margin-bottom:6px}
+.info-card p{margin:0;font-size:15px}
+.shot{position:relative;border-radius:12px;overflow:hidden;aspect-ratio:4/3}
+.shot img{width:100%;height:100%;object-fit:cover}
+.shot .cap{position:absolute;left:0;right:0;bottom:0;padding:26px 14px 12px;font-size:12.5px;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.65))}
+.galnote{font-size:12.5px;opacity:.6;margin-top:12px}
 
-<section><div class="wrap grid">
-  <div>
-    <h2>Seu estilo, marcado pra sempre</h2>
-    <div class="card"><p style="margin:0;font-size:16px">Do flash à arte personalizada, cada pele é um projeto. Estúdio limpo, material esterilizado e um portfólio que mostra o que a sua mão faz.</p></div>
-    <div class="concepto">
-      <p><b>Como fica seu site de verdade:</b> esta página é a <b>prévia</b> do site do <b>Tattoo Brasil BH - Tatuagem e Piercing</b>. Já está tudo aqui — o nome, o endereço real, o mapa do ponto exato, os horários e o botão que abre direto no WhatsApp da casa.</p>
-      <p>O próximo passo é só um: <b>enviar as fotos reais da sua fachada e do seu produto</b>. Trocamos a prévia pelas suas fotos e publicamos no ar, num endereço fixo seu para compartilhar onde quiser.</p>
-    </div>
-  </div>
-  <div class="info">
-    <div class="card" style="height:100%">
-      <span class="lbl">Endereço</span><p>Avenida Elísio de Brito, 280 - CEP 31060-470</p>
-      <span class="lbl">Telefone</span><p><a href="tel:">—</a></p>
-      <span class="lbl">Horário</span><p>Ter a Sex 10h-20h; Sáb 10h-15h; Dom e Seg fechado</p>
-      <span class="lbl">Cidade</span><p>Boa Vista · Belo Horizonte</p>
-    </div>
-  </div>
+body{background:#0a0a0a;color:#f2f0ea}
+.nav{position:sticky;top:0;z-index:9;background:rgba(10,10,10,.9);backdrop-filter:blur(8px);border-bottom:1px solid #262626}
+.navin{display:flex;align-items:center;justify-content:space-between;padding-block:14px}
+.logo{font-family:var(--fd);font-size:20px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:#f2f0ea}
+.nl{display:flex;gap:20px;flex-wrap:wrap}
+.nl a{text-decoration:none;font-weight:600;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#b8b4a8}
+.nl a:hover{color:var(--acc)}
+.hero{min-height:78vh;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden;border-bottom:1px solid #262626}
+.hero .bg{position:absolute;inset:0;background:radial-gradient(90% 60% at 70% 20%, var(--glow), transparent 60%)}
+.hero .wrap{position:relative;z-index:1}
+.hero .kick{color:var(--acc)}
+.hero h1{font-size:clamp(2.8rem,1.4rem + 8vw,6.5rem);text-transform:uppercase;letter-spacing:-.02em;margin:.6rem 0}
+.hero h1 .out{-webkit-text-stroke:2px #f2f0ea;color:transparent}
+.hero p.lead{font-size:clamp(16px,1rem + .5vw,19px);max-width:44ch;opacity:.85;margin:0 0 1.6rem}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn.acc{background:var(--acc);border-color:var(--acc);color:#0a0a0a}
+.btn.ghost{border-color:#4a4a4a;color:#f2f0ea}
+.btn.ghost:hover{border-color:var(--acc);color:var(--acc)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,4vw,48px);align-items:start}
+.styles h3{font-size:clamp(22px,1.2rem + 1.5vw,34px);text-transform:uppercase;margin:.4rem 0 .6rem}
+.styles p{opacity:.8;max-width:40ch}
+.chips .chip{border-color:#3a3a3a;color:#e8e4d8}
+.chips .chip:hover{border-color:var(--acc);color:var(--acc)}
+.artists .artist{background:#141414;border-color:#2a2a2a}
+.artists .artist .tag{background:#1c1c1c;border-color:#333}
+.quote{border-top:1px solid #262626;border-bottom:1px solid #262626}
+.quote blockquote{margin:0;font-family:var(--fd);font-size:clamp(1.4rem,1rem + 2vw,2.4rem);line-height:1.25;max-width:22ch}
+.quote cite{display:block;margin-top:1rem;font-size:14px;opacity:.6;font-style:normal}
+.studio .info-card{background:#141414;border-color:#2a2a2a}
+.map iframe{filter:invert(.92) hue-rotate(180deg)}
+.cta-band{background:var(--acc);color:#0a0a0a;text-align:center}
+.cta-band h2{color:#0a0a0a;font-size:clamp(2rem,1.2rem + 3vw,3.4rem);text-transform:uppercase}
+.cta-band p{max-width:52ch;margin:0 auto 1.4rem;opacity:.85}
+.cta-band .btn.acc{background:#0a0a0a;border-color:#0a0a0a;color:var(--acc)}
+@media(max-width:760px){.grid2{grid-template-columns:1fr}}
+</style></head><body><div class="nav"><div class="wrap navin"><a class="logo" href="#top">Tattoo Brasil BH - Tatuagem e Piercing</a><nav class="nl"><a href="#estilos">Estilos</a><a href="#equipe">Equipe</a><a href="#contato">Contato</a></nav></div></div>
+<header id="top"></header>
+<section class="hero"><div class="bg"></div><div class="wrap">
+<span class="kick">Tatuagem &amp; Piercing · BH</span>
+<h1>TATTOO BRASIL<br><span class="out">Belo Horizonte</span></h1>
+<p class="lead">Estúdio de tatuagem e piercing em Belo Horizonte: do fine line ao blackwork, com materiais descartáveis e agendamento por sessão.</p>
+<div class="cta"><a class="btn acc" href="https://wa.me/5541988887777?text=Olá! Vi o site de demonstração do Tattoo Brasil BH - Tatuagem e Piercing em Belo Horizonte que vocês montaram. Podem deixar pronto com as minhas fotos? Quanto fica?" target="_blank" rel="noopener">Agendar orçamento</a></div>
 </div></section>
-
-<section><div class="wrap">
-  <h2>Onde o Tattoo Brasil BH - Tatuagem e Piercing fica</h2>
-  <div class="map"><iframe loading="lazy" src="https://www.google.com/maps?q=Tattoo%20Brasil%20BH%20-%20Tatuagem%20e%20Piercing%20Belo%20Horizonte&output=embed" title="Mapa do Tattoo Brasil BH - Tatuagem e Piercing"></iframe></div>
+<section id="estilos"><div class="wrap grid2">
+<div class="styles"><span class="kick">O que fazemos</span>
+<h3>Estilos & serviços</h3>
+<p>O Tattoo Brasil é um dos pontos de tatuagem e piercing de BH. Equipe com estilos variados, sala limpa, material 100% descartável e atendimento que respeita o seu tempo — do desenho ao pós.</p>
+<div class="chips" style="margin-top:1.2rem"><span class="chip">Fine line</span><span class="chip">Blackwork</span><span class="chip">Realismo</span><span class="chip">Tradicional</span><span class="chip">Alvoradado</span><span class="chip">Lettering</span><span class="chip">Piercing</span><span class="chip">Toque de retoque</span></div>
+</div>
+<div><div class="shot"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/London_Tattoo_Convention_2009%E2%80%93female_back_tattoo_02.jpg/1280px-London_Tattoo_Convention_2009%E2%80%93female_back_tattoo_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Estúdio &amp; sala" loading="lazy"><span class="cap">Estúdio &amp; sala</span></div><div class="shot"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Sacred_Craft_Tattoos_San_Marcos_Texas_2026.jpg/1280px-Sacred_Craft_Tattoos_San_Marcos_Texas_2026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Traço em processo" loading="lazy"><span class="cap">Traço em processo</span></div><div class="shot"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Ambigram_tattoo_New_York_%28Rich_Man%29.jpg/1280px-Ambigram_tattoo_New_York_%28Rich_Man%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Galeria de trabalhos" loading="lazy"><span class="cap">Galeria de trabalhos</span></div></div>
 </div></section>
-<section id="galeria"><div class="wrap">
-  <h2>O portfólio do seu estúdio</h2>
-  <div class="shot"><img loading="lazy" src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=900&q=80" alt="exemplo Tattoo Brasil BH - Tatuagem e Piercing"><div class="cap">Exemplo de como fica</div></div><div class="shot"><img loading="lazy" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=900&q=80" alt="exemplo Tattoo Brasil BH - Tatuagem e Piercing"><div class="cap">Exemplo de como fica</div></div><div class="shot you"><div class="ph">📷</div><h3>Aqui entra a SUA foto</h3><p>Fachada, balcão, produto — as suas fotos, com a sua cara.</p></div><div class="shot you"><div class="ph">✨</div><h3>E mais as suas</h3><p>No site de verdade a galeria fica toda com a identidade da sua loja.</p></div>
-  <p class="galnote">Estas imagens são um exemplo de como o portfólio do seu estúdio fica. No site de verdade entram as fotos das suas peças e do seu espaço.</p>
+<section class="quote"><div class="wrap">
+<blockquote>“Traço que fica para sempre.”</blockquote>
+<cite>— Tattoo Brasil BH - Tatuagem e Piercing</cite>
 </div></section>
-
-<section><div class="wrap">
-  <div class="card" style="background:var(--paper);text-align:center;padding:34px 24px">
-    <h2 style="margin-bottom:8px">Gostou do resultado?</h2>
-    <p style="max-width:560px;margin:0 auto 18px;color:var(--muted)">Com as suas fotos reais e a sua cara, este vira o site oficial do <b style="color:var(--ink)">Tattoo Brasil BH - Tatuagem e Piercing</b> — publicado no ar, rápido de encontrar no Google e compartilhável em 1 toque.</p>
-    <a class="btn wa" href="https://wa.me/5541988887777?text=Ol%C3%A1%21%20Vi%20o%20site%20de%20demonstra%C3%A7%C3%A3o%20do%20Tattoo%20Brasil%20BH%20-%20Tatuagem%20e%20Piercing%20que%20voc%C3%AAs%20montaram.%20Podem%20deixar%20pronto%20com%20as%20minhas%20fotos%3F%20Quanto%20fica%3F" target="_blank" rel="noopener" style="justify-content:center">Quero esse site de verdade →</a>
-  </div>
+<section id="equipe"><div class="wrap">
+<span class="kick">Equipe</span>
+<h2>Artistas</h2>
+<div class="artists"><div class="artist"><b>Brask</b><small>Fundador · Blackwork &amp; Realismo</small><span class="tag">Blackwork</span><span class="tag">Realismo</span><span class="tag">Fine line</span></div><div class="artist"><b>Nina Piercing</b><small>Piercing &amp; Corpo</small><span class="tag">Piercing</span><span class="tag">Acessórios</span><span class="tag">Cuidados</span></div><div class="artist"><b>Rafael T.</b><small>Tradicional &amp; Colorido</small><span class="tag">Tradicional</span><span class="tag">Old school</span><span class="tag">Colorido</span></div></div>
 </div></section>
-
-<footer><div class="wrap">
-  <p><b>Tattoo Brasil BH - Tatuagem e Piercing</b> — Boa Vista · Belo Horizonte. Página de demonstração da Vitrine. A gente finaliza com as suas fotos e publica de verdade.</p>
-  <p style="margin-top:8px">Feito pela Vitrine · <a href="https://wa.me/5541988887777?text=Ol%C3%A1%21%20Vi%20o%20site%20de%20demonstra%C3%A7%C3%A3o%20do%20Tattoo%20Brasil%20BH%20-%20Tatuagem%20e%20Piercing%20que%20voc%C3%AAs%20montaram.%20Podem%20deixar%20pronto%20com%20as%20minhas%20fotos%3F%20Quanto%20fica%3F">falar com a gente</a></p>
-</div></footer>
+<section class="cta-band"><div class="wrap">
+<h2>Agende seu agendamento</h2>
+<p>Meça a ideia, mande o referencial e receba orçamento. Todos os trabalhos são únicos, feitos em sessão com agendamento.</p>
+<a class="btn acc" href="https://wa.me/5541988887777?text=Olá! Vi o site de demonstração do Tattoo Brasil BH - Tatuagem e Piercing em Belo Horizonte que vocês montaram. Podem deixar pronto com as minhas fotos? Quanto fica?" target="_blank" rel="noopener">Agendar orçamento</a>
+</div></section>
+<section id="contato" class="studio"><div class="wrap">
+<span class="kick">Contato</span>
+<h2>Visite o estúdio</h2>
+<div class="infogrid"><div class="info-card"><span class="lbl">Endereço</span><p>Avenida Elísio de Brito, 280 - CEP 31060-470</p></div><div class="info-card"><span class="lbl">Horário</span><p>Ter a Sex 10h-20h; Sáb 10h-15h; Dom e Seg fechado</p></div><div class="info-card"><span class="lbl">Cidade</span><p>Boa Vista · Belo Horizonte</p></div></div>
+<div style="margin-top:18px"><div class="map"><iframe loading="lazy" src="https://www.google.com/maps?q=Tattoo+Brasil+BH+-+Tatuagem+e+Piercing+Belo+Horizonte&output=embed" title="Mapa"></iframe></div></div>
+</div></section>
+<footer><div class="wrap">Tattoo Brasil BH - Tatuagem e Piercing · Boa Vista — Belo Horizonte<br>Praça virtual de demonstração. Fotos e itens de exemplo; no site final entram as fotos e o cardápio reais da casa.</div></footer>
 </body></html>

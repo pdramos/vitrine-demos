@@ -1,113 +1,122 @@
 <!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Papelaria Maninho — Curitiba</title>
-<meta name="description" content="Papelaria Maninho em Curitiba. Endereço, telefone, horários e pedidos pelo WhatsApp.">
+<meta name="description" content="Papelaria · Curitiba Papelaria Maninho em Curitiba: Papelaria, material escolar e artístico, escritório e serviços de impressão — no coração de Curitiba.">
+<meta property="og:title" content="Papelaria Maninho">
+<meta property="og:description" content="Papelaria · Curitiba">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#141a12;--paper:#faf9f4;--line:#e3e6d8;--acc:#3d7a4f;--ok:#2f8f4e;--muted:#7c8069}
+:root{
+  --bg:#F7F5F1; --ink:#22201E; --acc:#4A6FA5; --acc2:#C24A6A;
+  --soft:#ECEBE7; --line:#DBD9D4; --glow:transparent;
+  --fd:'Playfair Display',serif; --fb:'Inter',sans-serif;
+}
 *{box-sizing:border-box}
-body{margin:0;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--fb);font-size:clamp(15px,.95rem + .3vw,17px);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
 a{color:inherit}
-.wrap{max-width:980px;margin:0 auto;padding:0 20px}
-.kicker{text-transform:uppercase;letter-spacing:.16em;font-size:12px;font-weight:700}
-.hero{position:relative;min-height:440px;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
-.hero .bg{position:absolute;inset:0;background-size:cover;background-position:center}
-.hero .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,8,6,.25) 0%,rgba(10,8,6,.5) 55%,rgba(10,8,6,.85) 100%)}
-.hero .inner{position:relative;width:100%;padding:44px 20px 34px}
-.hero .kicker{color:#bfe3c6}
-.hero h1{font-size:clamp(34px,7vw,58px);margin:.15em 0 .1em;letter-spacing:-.02em;text-shadow:0 2px 18px rgba(0,0,0,.35)}
-.hero .sub{font-size:18px;color:#f2ede4;margin:0;max-width:580px}
-.hero .badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
-.hero .badge{border:1px solid rgba(255,255,255,.35);background:rgba(20,16,12,.35);backdrop-filter:blur(6px);border-radius:999px;padding:6px 12px;font-size:13px}
-.hero .badge b{color:#8fe6b0}
-.hero .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
-.btn{text-decoration:none;font-weight:700;border-radius:12px;padding:14px 22px;font-size:16px;display:inline-flex;align-items:center;gap:8px;transition:transform .12s}
+h1,h2,h3{font-family:var(--fd);line-height:1.05;margin:0;font-weight:700}
+.wrap{max-width:1080px;margin:0 auto;padding:0 clamp(18px,4vw,40px)}
+section{padding-block:clamp(3rem,7vw,6rem)}
+.kick{font-family:var(--fb);text-transform:uppercase;letter-spacing:.18em;font-size:12px;font-weight:600;opacity:.75}
+h2{font-size:clamp(1.9rem,1.4rem + 2.4vw,3rem);margin-bottom:clamp(1.4rem,3vw,2.4rem)}
+.btn{display:inline-block;padding:14px 26px;border-radius:8px;font-weight:700;font-size:15px;text-decoration:none;border:2px solid var(--ink);transition:transform .15s ease, box-shadow .15s ease}
 .btn:hover{transform:translateY(-2px)}
-.btn.wa{background:#25d366;color:#fff;box-shadow:0 6px 20px rgba(37,211,102,.35)}
-.btn.ghost{border:1px solid rgba(255,255,255,.5);color:#fff;background:rgba(20,16,12,.25)}
-section{padding:44px 0;border-bottom:1px solid var(--line)}
-h2{font-size:24px;margin:0 0 14px;letter-spacing:-.01em}
-.grid{display:grid;grid-template-columns:1.25fr 1fr;gap:26px;align-items:start}
-@media(max-width:720px){.grid{grid-template-columns:1fr}}
-.map{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#e9e4da;height:300px}
-.map iframe{width:100%;height:100%;border:0;display:block}
-.info .lbl{text-transform:uppercase;font-size:11px;letter-spacing:.12em;color:var(--muted);display:block;margin-top:18px}
-.info .lbl:first-child{margin-top:0}
-.info p{margin:4px 0 0;font-size:16px}
-.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px}
-.concepto{background:var(--ink);color:#f4efe6;border-radius:14px;padding:22px;margin-top:16px}
-.concepto b{color:#bfe3c6}
-.concepto p{margin:10px 0 0}
-.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
-@media(max-width:560px){.gal{grid-template-columns:1fr}}
-.shot{position:relative;border-radius:14px;overflow:hidden;border:1px solid var(--line);aspect-ratio:4/3;background:#000}
-.shot img{width:100%;height:100%;object-fit:cover;display:block}
-.shot .cap{position:absolute;left:0;right:0;bottom:0;padding:24px 12px 10px;font-size:13px;color:#fff;background:linear-gradient(0deg,rgba(0,0,0,.72),transparent)}
-.shot.you{background:repeating-linear-gradient(45deg,#fff,#fff 12px,#faf6f0 12px,#faf6f0 24px);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:18px}
-.shot.you .ph{font-size:38px}
-.shot.you h3{margin:.3em 0 .2em;font-size:16px;color:var(--acc)}
-.shot.you p{margin:0;font-size:13px;color:var(--muted)}
-.galnote{font-size:12px;color:var(--muted);margin-top:12px}
-footer{padding:36px 0 60px;color:var(--muted);font-size:14px}
-footer a{color:var(--acc)}
-</style></head><body>
-<header class="hero">
-  <div class="bg" style="background-image:url('https://images.unsplash.com/photo-1586075010923-2dd4570fb338?w=1600&q=80')"></div>
-  <div class="inner wrap">
-    <div class="kicker">papelaria · escola e escritório</div>
-    <h1>Papelaria Maninho</h1>
-    <p class="sub">Papelaria completa pra escola, escritório e casa — tudo no mesmo lugar, perto de você.</p>
-    <div class="badges">
-      <span class="badge"><b>✓</b> no mapa</span>
-      <span class="badge"><b>✓</b> com telefone</span>
-      <span class="badge"><b>✓</b> WhatsApp 1 toque</span>
-      <span class="badge"><b>✓</b> produtos organizados</span>
-    </div>
-    <div class="cta">
-      <a class="btn wa" href="https://wa.me/5541988887777?text=Ol%C3%A1%21%20Vi%20o%20site%20de%20demonstra%C3%A7%C3%A3o%20do%20Papelaria%20Maninho%20que%20voc%C3%AAs%20montaram.%20Podem%20deixar%20pronto%20com%20as%20minhas%20fotos%3F%20Quanto%20fica%3F" target="_blank" rel="noopener">💬 Chamar no WhatsApp</a>
-      <a class="btn ghost" href="#galeria">Ver a galeria</a>
-    </div>
-  </div>
-</header>
+.btn.acc{background:var(--acc);border-color:var(--acc);color:#fff}
+.btn.ghost{background:transparent}
+.map{border-radius:12px;overflow:hidden;border:1px solid var(--line)}
+.map iframe{width:100%;height:340px;border:0;display:block}
+footer{padding:34px 0 56px;font-size:13px;opacity:.7;border-top:1px solid var(--line)}
+.mcat{font-size:13px;text-transform:uppercase;letter-spacing:.16em;font-weight:700;margin:clamp(1.6rem,3vw,2.4rem) 0 .7rem;opacity:.85}
+.menu .mi{display:flex;align-items:baseline;gap:10px;padding:.45rem 0}
+.menu .mi span:first-child{font-weight:600;white-space:nowrap}
+.menu .mi .dots{flex:1;border-bottom:2px dotted var(--line);transform:translateY(-4px);min-width:24px}
+.menu .mi em{font-style:normal;font-weight:700;white-space:nowrap}
+.menu .mi small{display:block;flex-basis:100%;opacity:.7;font-size:13px}
+.menu .mi{flex-wrap:wrap}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px}
+.tile{border:1px solid var(--line);border-radius:10px;padding:16px;background:var(--soft)}
+.tile b{display:block;font-size:15px;margin-bottom:4px}
+.tile small{opacity:.7;font-size:13px;line-height:1.45;display:block}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips .chip{border:2px solid var(--ink);border-radius:999px;padding:7px 16px;font-weight:600;font-size:13.5px}
+.artists{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}
+.artist{border:1px solid var(--line);border-radius:12px;padding:18px;background:var(--soft)}
+.artist b{font-size:16px;display:block;margin-bottom:2px}
+.artist small{opacity:.7;font-size:13px;display:block;margin-bottom:10px}
+.artist .tag{display:inline-block;font-size:11.5px;border:1px solid var(--line);border-radius:999px;padding:3px 10px;margin:2px 4px 0 0}
+.infogrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
+.info-card{border:1px solid var(--line);border-radius:12px;padding:18px;background:var(--soft)}
+.info-card .lbl{font-size:11px;text-transform:uppercase;letter-spacing:.14em;opacity:.6;display:block;margin-bottom:6px}
+.info-card p{margin:0;font-size:15px}
+.shot{position:relative;border-radius:12px;overflow:hidden;aspect-ratio:4/3}
+.shot img{width:100%;height:100%;object-fit:cover}
+.shot .cap{position:absolute;left:0;right:0;bottom:0;padding:26px 14px 12px;font-size:12.5px;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.65))}
+.galnote{font-size:12.5px;opacity:.6;margin-top:12px}
 
-<section><div class="wrap grid">
-  <div>
-    <h2>Tudo que você procura, num só lugar</h2>
-    <div class="card"><p style="margin:0;font-size:16px">Do caderno ao material de escritório, da papelaria pro colégio. Endereço certo, telefone na mão e o que a sua loja oferece bem organizado.</p></div>
-    <div class="concepto">
-      <p><b>Como fica seu site de verdade:</b> esta página é a <b>prévia</b> do site do <b>Papelaria Maninho</b>. Já está tudo aqui — o nome, o endereço real, o mapa do ponto exato, os horários e o botão que abre direto no WhatsApp da casa.</p>
-      <p>O próximo passo é só um: <b>enviar as fotos reais da sua fachada e do seu produto</b>. Trocamos a prévia pelas suas fotos e publicamos no ar, num endereço fixo seu para compartilhar onde quiser.</p>
-    </div>
-  </div>
-  <div class="info">
-    <div class="card" style="height:100%">
-      <span class="lbl">Endereço</span><p> — Curitiba</p>
-      <span class="lbl">Telefone</span><p><a href="tel:4130770083">(41) 3077-0083</a></p>
-      <span class="lbl">Horário</span><p>veja no local</p>
-      <span class="lbl">Cidade</span><p>Curitiba</p>
-    </div>
-  </div>
+.nav{position:sticky;top:0;z-index:9;background:color-mix(in srgb, var(--bg) 88%, transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.navin{display:flex;align-items:center;justify-content:space-between;padding-block:16px}
+.logo{font-family:var(--fd);font-size:20px;font-weight:600;letter-spacing:.02em;text-decoration:none;color:var(--ink)}
+.nl{display:flex;gap:22px;flex-wrap:wrap}
+.nl a{text-decoration:none;font-weight:500;font-size:14px;color:var(--ink);opacity:.75}
+.nl a:hover{opacity:1;color:var(--acc)}
+.hero{padding-block:clamp(3rem,8vw,7rem);border-bottom:1px solid var(--line)}
+.hero .kick{color:var(--acc)}
+.hero h1{font-size:clamp(2.6rem,1.5rem + 5vw,5rem);font-weight:600;letter-spacing:-.02em;margin:.7rem 0;max-width:18ch}
+.hero p.lead{font-size:clamp(16px,1rem + .5vw,19px);max-width:52ch;opacity:.85;margin:0 0 1.6rem}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+.split{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(24px,5vw,60px);align-items:center}
+.split .side{display:grid;gap:12px}
+.tiles .tile{background:var(--bg);border-color:var(--line)}
+.tiles .tile b{font-family:var(--fd);font-weight:600}
+.dept{border-top:2px solid var(--ink)}
+.dept .dhead{display:flex;align-items:baseline;gap:12px;padding:20px 0 12px}
+.dept .dhead .num{font-family:var(--fd);font-size:15px;color:var(--acc);font-weight:600}
+.dept .dhead h3{font-size:clamp(19px,1.1rem + .8vw,26px);font-weight:600;margin:0}
+.dept .dhead p{margin:0;opacity:.7;font-size:14px;flex:1;text-align:right}
+.list2{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:4px 28px}
+.list2 li{list-style:none;padding:9px 0;border-bottom:1px solid var(--line);font-size:15px;display:flex;justify-content:space-between;gap:10px}
+.list2 li em{font-style:normal;color:var(--acc);font-weight:600;white-space:nowrap}
+.serv .info-card{background:var(--bg);border-color:var(--line)}
+.cta-band{background:var(--ink);color:var(--bg);text-align:center}
+.cta-band h2{color:var(--bg);font-weight:600}
+.cta-band p{opacity:.85;max-width:56ch;margin:0 auto 1.4rem}
+.cta-band .btn.acc{color:var(--bg)}
+@media(max-width:760px){.split{grid-template-columns:1fr}.dept .dhead p{text-align:left}}
+</style></head><body><div class="nav"><div class="wrap navin"><a class="logo" href="#top">Papelaria Maninho</a><nav class="nl"><a href="#dep0">Papelaria</a><a href="#dep1">Artesanato</a><a href="#dep2">Material</a><a href="#dep3">Serviços</a><a href="#contato">Atendimento</a></nav></div></div>
+<header id="top"></header>
+<section class="hero"><div class="wrap split">
+<div><span class="kick">Papelaria · Curitiba</span>
+<h1>Papelaria Maninho</h1>
+<p class="lead">Papelaria, material escolar e artístico, escritório e serviços de impressão — no coração de Curitiba.</p>
+<div class="cta"><a class="btn acc" href="https://wa.me/5541988887777?text=Olá! Vi o site de demonstração do Papelaria Maninho em Curitiba que vocês montaram. Podem deixar pronto com as minhas fotos? Quanto fica?" target="_blank" rel="noopener">Fale com a loja</a><a class="btn ghost" href="tel:4130770083">☎ (41) 3077-0083</a></div></div>
+<div class="side"><div class="shot"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1000&q=80&fm=jpg" alt="Catálogo da loja" loading="lazy"><span class="cap">Catálogo da loja</span></div><div class="shot"><img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1000&q=80&fm=jpg" alt="Móveis de trabalho" loading="lazy"><span class="cap">Móveis de trabalho</span></div><div class="shot"><img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=1000&q=80&fm=jpg" alt="O balcão de atendimento" loading="lazy"><span class="cap">O balcão de atendimento</span></div></div>
 </div></section>
-
 <section><div class="wrap">
-  <h2>Onde o Papelaria Maninho fica</h2>
-  <div class="map"><iframe loading="lazy" src="https://www.google.com/maps?q=Papelaria%20Maninho%20Curitiba&output=embed" title="Mapa do Papelaria Maninho"></iframe></div>
+<span class="kick">O que você encontra aqui</span>
+<h2 style="max-width:20ch">Departamentos & itens</h2>
+<div class="dept" id="dep0">
+<div class="dhead"><span class="num">01</span><h3>Papelaria &amp; Escrita</h3><p>O básico bem feito, com carinho.</p></div>
+<ul class="list2" style="margin:0;padding:0"><li><span>Cadernos universitários</span></li><li><span>Canetas e lápis</span></li><li><span>Adesivos e post-its</span></li><li><span>Papel A4</span></li></ul></div><div class="dept" id="dep1">
+<div class="dhead"><span class="num">02</span><h3>Artesanato &amp; Criativo</h3><p>Deixe a imaginação fluir.</p></div>
+<ul class="list2" style="margin:0;padding:0"><li><span>Tintas e pincéis</span></li><li><span>Esmaltes para tecido</span></li><li><span>Cartolinas e EVA</span></li><li><span>Molde e forminhas</span></li></ul></div><div class="dept" id="dep2">
+<div class="dhead"><span class="num">03</span><h3>Material Escolar</h3><p>Tudo para o retorno às aulas.</p></div>
+<ul class="list2" style="margin:0;padding:0"><li><span>Estojo e lápis</span></li><li><span>Mochila infantil</span></li><li><span>Livro paradidático</span></li><li><span>Álbum para coleções</span></li></ul></div><div class="dept" id="dep3">
+<div class="dhead"><span class="num">04</span><h3>Serviços Rápidos</h3><p>Prático para o dia a dia.</p></div>
+<ul class="list2" style="margin:0;padding:0"><li><span>Impressão digital</span></li><li><span>Fotocópias</span></li><li><span>Laminagem</span></li><li><span>Encadernação espiral</span></li></ul></div>
 </div></section>
-<section id="galeria"><div class="wrap">
-  <h2>As prateleiras da sua papelaria</h2>
-  <div class="shot"><img loading="lazy" src="fotos/c0.jpg" alt="Papelaria Maninho"><div class="cap">Foto real da loja</div></div><div class="shot"><img loading="lazy" src="fotos/c1.jpg" alt="Papelaria Maninho"><div class="cap">Foto real da loja</div></div><div class="shot"><img loading="lazy" src="fotos/c2.jpg" alt="Papelaria Maninho"><div class="cap">Foto real da loja</div></div>
-  <p class="galnote">Fotos reais da loja, coletadas da página oficial.</p>
+<section class="serv"><div class="wrap">
+<span class="kick">Atendimento</span>
+<h2 style="max-width:18ch">Papel, caneta e ideias.</h2>
+<p style="max-width:60ch;opacity:.85;margin-top:-.6rem">A Papelaria Maninho é o canto de Curitiba onde o material da escola, do trabalho e da arte se encontra. Aqui você resolve do caderno do começo do ano ao laminação urgente, com atendimento de vizinho.</p>
+<div style="margin-top:1.6rem"><div class="infogrid"><div class="info-card"><span class="lbl">Telefone</span><p><a href="tel:4130770083">(41) 3077-0083</a></p></div><div class="info-card"><span class="lbl">Cidade</span><p>— · Curitiba</p></div></div></div>
+<div style="margin-top:18px"><div class="map"><iframe loading="lazy" src="https://www.google.com/maps?q=Papelaria+Maninho+Curitiba&output=embed" title="Mapa"></iframe></div></div>
 </div></section>
-
-<section><div class="wrap">
-  <div class="card" style="background:var(--paper);text-align:center;padding:34px 24px">
-    <h2 style="margin-bottom:8px">Gostou do resultado?</h2>
-    <p style="max-width:560px;margin:0 auto 18px;color:var(--muted)">Com as suas fotos reais e a sua cara, este vira o site oficial do <b style="color:var(--ink)">Papelaria Maninho</b> — publicado no ar, rápido de encontrar no Google e compartilhável em 1 toque.</p>
-    <a class="btn wa" href="https://wa.me/5541988887777?text=Ol%C3%A1%21%20Vi%20o%20site%20de%20demonstra%C3%A7%C3%A3o%20do%20Papelaria%20Maninho%20que%20voc%C3%AAs%20montaram.%20Podem%20deixar%20pronto%20com%20as%20minhas%20fotos%3F%20Quanto%20fica%3F" target="_blank" rel="noopener" style="justify-content:center">Quero esse site de verdade →</a>
-  </div>
+<section class="cta-band" id="contato"><div class="wrap">
+<h2>Precisa de um item específico?</h2>
+<p>Chame no WhatsApp que a gente procura e reserva pra você.  — Curitiba.</p>
+<a class="btn acc" href="https://wa.me/5541988887777?text=Olá! Vi o site de demonstração do Papelaria Maninho em Curitiba que vocês montaram. Podem deixar pronto com as minhas fotos? Quanto fica?" target="_blank" rel="noopener">Fale com a loja</a> <a class="btn ghost" href="tel:4130770083">☎ (41) 3077-0083</a>
 </div></section>
-
-<footer><div class="wrap">
-  <p><b>Papelaria Maninho</b> — Curitiba. Página de demonstração da Vitrine. A gente finaliza com as suas fotos e publica de verdade.</p>
-  <p style="margin-top:8px">Feito pela Vitrine · <a href="https://wa.me/5541988887777?text=Ol%C3%A1%21%20Vi%20o%20site%20de%20demonstra%C3%A7%C3%A3o%20do%20Papelaria%20Maninho%20que%20voc%C3%AAs%20montaram.%20Podem%20deixar%20pronto%20com%20as%20minhas%20fotos%3F%20Quanto%20fica%3F">falar com a gente</a></p>
-</div></footer>
+<footer><div class="wrap">Papelaria Maninho · Curitiba — Curitiba<br>Praça virtual de demonstração. Fotos e itens de exemplo; no site final entram as fotos e o cardápio reais da casa.</div></footer>
 </body></html>

@@ -1,5 +1,5 @@
-// Slugs dos sites-demo já publicados no GitHub Pages.
-// Gerado automaticamente pelo deploy — não editar à mão.
+// Slugs dos sites-demo publicados no GitHub Pages.
+// Gerado automaticamente pelo gerador — não editar à mão.
 window.DEMOS = [
   'calavera-tatoo-arte-e-estilo',
   'central-materiais-de-constru-o',
