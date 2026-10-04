@@ -1,131 +1,189 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Papelaria Mil Cores — Belo Horizonte</title>
-<meta name="description" content="Papelaria Colorida · BH Papelaria Mil Cores em Belo Horizonte: Papelaria, material artístico, escolar e escritório com mil cores e serviço de impressão — tudo para criar.">
-<meta property="og:title" content="Papelaria Mil Cores">
-<meta property="og:description" content="Papelaria Colorida · BH">
+<title>Papelaria Mil Cores — conceito de site (papelaria) · Belo Horizonte</title>
+<meta name="description" content="Proposta de site para Papelaria Mil Cores, papelaria em Belo Horizonte. Demonstração de conceito: dados de referência e fotos ilustrativas.">
+<meta property="og:title" content="Papelaria Mil Cores — conceito de site (papelaria) · Belo Horizonte">
+<meta property="og:description" content="Proposta de site para Papelaria Mil Cores, papelaria em Belo Horizonte. Demonstração de conceito: dados de referência e fotos ilustrativas.">
 <meta property="og:type" content="website">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Archivo+Black:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta property="og:image" content="https://images.unsplash.com/photo-1503602642458-232111445657?w=1000&amp;q=80&amp;fm=jpg">
+<meta name="theme-color" content="#fdeef0">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{
-  --bg:#FDF9F0; --ink:#2A2118; --acc:#E85D75; --acc2:#3E8ED0;
-  --soft:#F4EEDF; --line:#E8DDC8; --glow:transparent;
-  --fd:'Archivo Black',serif; --fb:'Manrope',sans-serif;
-}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--fb);font-size:clamp(15px,.95rem + .3vw,17px);line-height:1.6;-webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block}
-a{color:inherit}
-h1,h2,h3{font-family:var(--fd);line-height:1.05;margin:0;font-weight:700}
-.wrap{max-width:1080px;margin:0 auto;padding:0 clamp(18px,4vw,40px)}
-section{padding-block:clamp(3rem,7vw,6rem)}
-.kick{font-family:var(--fb);text-transform:uppercase;letter-spacing:.18em;font-size:12px;font-weight:600;opacity:.75}
-h2{font-size:clamp(1.9rem,1.4rem + 2.4vw,3rem);margin-bottom:clamp(1.4rem,3vw,2.4rem)}
-.btn{display:inline-block;padding:14px 26px;border-radius:8px;font-weight:700;font-size:15px;text-decoration:none;border:2px solid var(--ink);transition:transform .15s ease, box-shadow .15s ease}
-.btn:hover{transform:translateY(-2px)}
-.btn.acc{background:var(--acc);border-color:var(--acc);color:#fff}
-.btn.ghost{background:transparent}
-.map{border-radius:12px;overflow:hidden;border:1px solid var(--line)}
-.map iframe{width:100%;height:340px;border:0;display:block}
-footer{padding:34px 0 56px;font-size:13px;opacity:.7;border-top:1px solid var(--line)}
-.mcat{font-size:13px;text-transform:uppercase;letter-spacing:.16em;font-weight:700;margin:clamp(1.6rem,3vw,2.4rem) 0 .7rem;opacity:.85}
-.menu .mi{display:flex;align-items:baseline;gap:10px;padding:.45rem 0}
-.menu .mi span:first-child{font-weight:600;white-space:nowrap}
-.menu .mi .dots{flex:1;border-bottom:2px dotted var(--line);transform:translateY(-4px);min-width:24px}
-.menu .mi em{font-style:normal;font-weight:700;white-space:nowrap}
-.menu .mi small{display:block;flex-basis:100%;opacity:.7;font-size:13px}
-.menu .mi{flex-wrap:wrap}
-.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px}
-.tile{border:1px solid var(--line);border-radius:10px;padding:16px;background:var(--soft)}
-.tile b{display:block;font-size:15px;margin-bottom:4px}
-.tile small{opacity:.7;font-size:13px;line-height:1.45;display:block}
-.chips{display:flex;flex-wrap:wrap;gap:8px}
-.chips .chip{border:2px solid var(--ink);border-radius:999px;padding:7px 16px;font-weight:600;font-size:13.5px}
-.artists{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}
-.artist{border:1px solid var(--line);border-radius:12px;padding:18px;background:var(--soft)}
-.artist b{font-size:16px;display:block;margin-bottom:2px}
-.artist small{opacity:.7;font-size:13px;display:block;margin-bottom:10px}
-.artist .tag{display:inline-block;font-size:11.5px;border:1px solid var(--line);border-radius:999px;padding:3px 10px;margin:2px 4px 0 0}
-.infogrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
-.info-card{border:1px solid var(--line);border-radius:12px;padding:18px;background:var(--soft)}
-.info-card .lbl{font-size:11px;text-transform:uppercase;letter-spacing:.14em;opacity:.6;display:block;margin-bottom:6px}
-.info-card p{margin:0;font-size:15px}
-.shot{position:relative;border-radius:12px;overflow:hidden;aspect-ratio:4/3}
-.shot img{width:100%;height:100%;object-fit:cover}
-.shot .cap{position:absolute;left:0;right:0;bottom:0;padding:26px 14px 12px;font-size:12.5px;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.65))}
-.galnote{font-size:12.5px;opacity:.6;margin-top:12px}
 
-body{font-family:var(--fb)}
-.nav{position:sticky;top:0;z-index:9;background:var(--bg);border-bottom:2px dashed var(--acc)}
-.navin{display:flex;align-items:center;justify-content:space-between;padding-block:14px}
-.logo{font-family:var(--fd);font-size:21px;font-weight:900;text-decoration:none;color:var(--ink);text-transform:uppercase;letter-spacing:.02em}
-.nl{display:flex;gap:18px;flex-wrap:wrap}
-.nl a{text-decoration:none;font-weight:700;font-size:13.5px;color:var(--ink)}
-.nl a:hover{color:var(--acc)}
-.hero{padding-block:clamp(2.5rem,6vw,5rem);position:relative;overflow:hidden}
-.hero .dot{position:absolute;border-radius:50%;opacity:.5}
-.hero .d1{width:120px;height:120px;background:var(--acc);top:-30px;right:8%}
-.hero .d2{width:70px;height:70px;background:var(--acc2);bottom:10px;right:24%}
-.hero .d3{width:40px;height:40px;background:var(--ink);top:40%;right:4%}
-.hero .wrap{position:relative;z-index:1}
-.hero h1{font-size:clamp(2.4rem,1.5rem + 4.5vw,4.4rem);font-weight:900;text-transform:uppercase;line-height:1;margin:.6rem 0 .8rem}
-.hero h1 .mark{background:var(--acc);color:#fff;padding:0 .18em;display:inline-block;transform:rotate(-2deg)}
-.hero p.lead{font-size:18px;max-width:50ch;margin:0 0 1.4rem}
-.hero .cta{display:flex;gap:12px;flex-wrap:wrap}
-.btn.acc{background:var(--acc);border-color:var(--acc);color:#fff}
-.btn.ghost{background:var(--acc2);border-color:var(--acc2);color:#fff}
-.depts{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
-.dept{border:3px solid var(--ink);border-radius:16px;padding:18px;background:var(--soft);box-shadow:6px 6px 0 var(--ink)}
-.dept .ic{font-size:30px;line-height:1}
-.dept h3{font-family:var(--fd);font-weight:900;font-size:19px;margin:.5rem 0 .3rem;text-transform:uppercase}
-.dept p{margin:0 0 .7rem;font-size:13.5px;opacity:.75}
-.dept ul{margin:0;padding:0;list-style:none}
-.dept li{font-size:14px;padding:5px 0;border-top:1.5px dashed var(--line)}
-.dept li::before{content:'✓ ';font-weight:900;color:var(--acc)}
-.dept:nth-child(4n+1){background:#fff6d6}
-.dept:nth-child(4n+2){background:#e5f6e5}
-.dept:nth-child(4n+3){background:#e2ecff}
-.dept:nth-child(4n+4){background:#ffe0ea}
-.promo{background:var(--ink);color:#fff;text-align:center}
-.promo h2{color:#fff;font-weight:900;text-transform:uppercase}
-.promo h2 .mark{background:var(--acc);color:#fff;padding:0 .2em;display:inline-block;transform:rotate(2deg)}
-.promo p{opacity:.9;max-width:56ch;margin:.4rem auto 1.4rem}
-.promo .btn.acc{color:#fff}
-.srv .info-card{background:var(--soft);border-color:var(--ink)}
-.cta-band{background:var(--acc);color:#fff;text-align:center}
-.cta-band h2{color:#fff;font-weight:900;text-transform:uppercase}
-.cta-band p{opacity:.95;max-width:54ch;margin:0 auto 1.4rem}
-.cta-band .btn{background:#fff;border-color:#fff;color:var(--acc)}
-@media(max-width:600px){.hero .d1{width:80px;height:80px}}
-</style></head><body><div class="nav"><div class="wrap navin"><a class="logo" href="#top">Papelaria Mil Cores</a><nav class="nl"><a href="#deps">Departamentos</a><a href="#contato">Atendimento</a></nav></div></div>
-<header id="top"></header>
-<section class="hero"><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="wrap">
-<span class="kick">Papelaria Colorida · BH</span>
-<h1>Papelaria Mil Cores</h1>
-<p class="lead">Papelaria, material artístico, escolar e escritório com mil cores e serviço de impressão — tudo para criar.</p>
-<div class="cta"><a class="btn acc" href="https://wa.me/5541988887777?text=Olá! Vi o site de demonstração do Papelaria Mil Cores em Belo Horizonte que vocês montaram. Podem deixar pronto com as minhas fotos? Quanto fica?" target="_blank" rel="noopener">Chamar no WhatsApp</a><a class="btn ghost" href="tel:3134941121">☎ (31) 3494-1121</a></div>
-<div class="photo-strip" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:1.4rem"><div class="shot"><img src="https://images.unsplash.com/photo-1503602642458-232111445657?w=1000&q=80&fm=jpg" alt="Catálogo da loja" loading="lazy"><span class="cap">Catálogo da loja</span></div><div class="shot"><img src="https://images.unsplash.com/photo-1544816155-12df9643f363?w=1000&q=80&fm=jpg" alt="Móveis de trabalho" loading="lazy"><span class="cap">Móveis de trabalho</span></div><div class="shot"><img src="https://images.unsplash.com/photo-1568205612837-017257d2310a?w=1000&q=80&fm=jpg" alt="O balcão de atendimento" loading="lazy"><span class="cap">O balcão de atendimento</span></div></div>
-</div></section>
-<section id="deps"><div class="wrap">
-<span class="kick">O que temos</span>
-<h2 style="font-weight:900;text-transform:uppercase">Departamentos</h2>
-<div class="depts"><div class="dept"><div class="ic">📦</div><h3>Papelaria Completa</h3><p>Tudo para estudar e para o trabalho, em um só lugar.</p><ul><li>Cadernos (varias capas)</li><li>Moleskines e planners</li><li>Canetas gel, tinta e marcadores</li><li>Papel Sulfite A4</li></ul></div><div class="dept"><div class="ic">📦</div><h3>Artístico &amp; Criativo</h3><p>Para colorir, desenhar e criar.</p><ul><li>Lápis de cor (12 a 72 cores)</li><li>Pintura em guache e acrílico</li><li>Papel timbrado e telado</li><li>Esmaltes e tintas para artesanato</li></ul></div><div class="dept"><div class="ic">📦</div><h3>Material Escolar</h3><p>Kit completo para começar o ano letivo.</p><ul><li>Mochilas e nécessaire</li><li>Estojo e lápis</li><li>Material didático</li><li>Uniforme escolar</li></ul></div><div class="dept"><div class="ic">📦</div><h3>Escritório &amp; Serviços</h3><p>Impressões, cópias e insumos para o seu negócio.</p><ul><li>Impressão digital</li><li>Fotocópias preto e cor</li><li>Encadernação</li><li>Etiquetas e adesivos</li></ul></div></div>
-</div></section>
-<section class="promo"><div class="wrap">
-<h2><span class="mark">Material novo</span> toda semana</h2>
-<p>Na Mil Cores você encontra o papel que faltava, a tinta perfeita e a ideia que não sai da cabeça. É a papelaria do bairro para quem estuda, cria e trabalha — com cor em todos os sentidos.</p>
-<a class="btn acc" href="https://wa.me/5541988887777?text=Olá! Vi o site de demonstração do Papelaria Mil Cores em Belo Horizonte que vocês montaram. Podem deixar pronto com as minhas fotos? Quanto fica?" target="_blank" rel="noopener">Ver novidades</a>
-</div></section>
-<section id="contato" class="srv"><div class="wrap">
-<span class="kick">Atendimento</span>
-<h2 style="font-weight:900;text-transform:uppercase">Seu material, mil cores.</h2>
-<div style="margin-top:1.2rem"><div class="infogrid"><div class="info-card"><span class="lbl">Endereço</span><p>Avenida Guarapari, 886 - CEP 31560-000</p></div><div class="info-card"><span class="lbl">Horário</span><p>Seg a Sex 7h-20h; Sáb 8h-19h</p></div><div class="info-card"><span class="lbl">Telefone</span><p><a href="tel:3134941121">(31) 3494-1121</a></p></div><div class="info-card"><span class="lbl">Cidade</span><p>Santa Amélia · Belo Horizonte</p></div><div class="info-card"><span class="lbl">Instagram</span><p><a href="https://instagram.com/papelaria.milcores" target="_blank" rel="noopener">@papelaria.milcores</a></p></div></div></div>
-<div style="margin-top:18px"><div class="map"><iframe loading="lazy" src="https://www.google.com/maps?q=Papelaria+Mil+Cores+Belo+Horizonte&output=embed" title="Mapa"></iframe></div></div>
-</div></section>
-<section class="cta-band"><div class="wrap">
-<h2>Vem até a gente</h2>
-<p>Avenida Guarapari, 886 - CEP 31560-000 · Belo Horizonte. Seg a Sex 7h-20h; Sáb 8h-19h</p>
-<a class="btn acc" href="https://wa.me/5541988887777?text=Olá! Vi o site de demonstração do Papelaria Mil Cores em Belo Horizonte que vocês montaram. Podem deixar pronto com as minhas fotos? Quanto fica?" target="_blank" rel="noopener">Chamar no WhatsApp</a> <a class="btn ghost" href="tel:3134941121">☎ (31) 3494-1121</a>
-</div></section>
-<footer><div class="wrap">Papelaria Mil Cores · Santa Amélia — Belo Horizonte<br>Praça virtual de demonstração. Fotos e itens de exemplo; no site final entram as fotos e o cardápio reais da casa.</div></footer>
-</body></html>
+:root{
+  --bg:#fdeef0; --bg2:#f9e1e6; --ink:#2e2230;
+  --mut:#6f5a6a; --acc:#e8425f; --acc2:#2f6fd6;
+  --soft:#f7d9df; --line:rgba(46,34,48,.16);
+  --on-acc:#fff2f5;
+  --fd:'Bricolage Grotesque',serif; --fb:'Work Sans',sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--fb);
+  font-size:clamp(15.5px,.9rem + .35vw,17.5px);line-height:1.62;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration-thickness:1px;text-underline-offset:2.5px}
+h1,h2,h3{font-family:var(--fd);line-height:1.06;margin:0;letter-spacing:-.01em}
+p{margin:0 0 1em}
+section{padding-block:clamp(3rem,7vw,5.5rem)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 clamp(18px,4.5vw,44px)}
+.kick{display:inline-block;font-family:var(--fb);text-transform:uppercase;
+  letter-spacing:.2em;font-size:11.5px;font-weight:700;color:var(--acc);margin-bottom:14px}
+h2{font-size:clamp(1.85rem,1.35rem + 2.6vw,3.1rem);margin-bottom:clamp(1.2rem,2.5vw,2rem)}
+
+/* acessibilidade */
+.skip{position:absolute;left:-9999px;top:0;background:var(--ink);color:var(--bg);
+  padding:10px 18px;z-index:100;font-weight:700}
+.skip:focus{left:12px;top:12px}
+:focus-visible{outline:3px solid var(--acc);outline-offset:3px;border-radius:4px}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{animation:none!important;transition:none!important}
+}
+
+/* banner de demonstração — no topo (fixo; a nav fica sticky abaixo dele) */
+.demo-bar{background:var(--ink);color:var(--bg);
+  font-size:12.5px;line-height:1.5;padding:8px 0}
+.demo-in{display:flex;flex-wrap:wrap;gap:4px 14px;align-items:baseline}
+.demo-bar strong{font-weight:800;letter-spacing:.04em;text-transform:uppercase;font-size:11px}
+.demo-bar a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+.demo-bar a:hover{opacity:.85}
+
+/* cabeçalho */
+.hd{position:sticky;top:0;z-index:50;background:color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line)}
+.demo-bar + .hd{top:0}
+.hd-in{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:14px;padding-bottom:14px}
+.hd-logo{font-family:var(--fd);font-weight:700;font-size:clamp(1.05rem,1rem + .4vw,1.25rem);
+  text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:62vw}
+.hd-nav{display:flex;gap:clamp(12px,2.4vw,26px);font-size:14px;font-weight:600}
+.hd-nav a{text-decoration:none;opacity:.78;padding:6px 2px;white-space:nowrap}
+.hd-nav a:hover{opacity:1;text-decoration:underline}
+@media (max-width:640px){
+  .hd-nav{display:none}
+  .hd-in{padding-top:12px;padding-bottom:12px}
+}
+
+/* botões honestos */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  padding:14px 24px;border-radius:10px;font-weight:700;font-size:15px;line-height:1.2;
+  text-decoration:none;border:2px solid transparent;cursor:pointer;
+  transition:transform .15s ease, box-shadow .15s ease, background .15s ease;min-height:48px}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(0)}
+.btn .who{font-size:11px;font-weight:600;opacity:.85;text-transform:uppercase;letter-spacing:.08em}
+.btn-studio{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.btn-studio:hover{background:var(--acc);border-color:var(--acc);color:var(--on-acc)}
+.btn-shop{background:var(--acc);color:var(--on-acc);border-color:var(--acc)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--ink)}
+.btnrow{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:clamp(1.2rem,2.5vw,1.8rem)}
+
+/* fotos */
+.ph{position:relative;margin:0;border-radius:14px;overflow:hidden;background:var(--soft)}
+.ph img{width:100%;height:100%;object-fit:cover}
+.ph-cap{position:absolute;left:0;right:0;bottom:0;padding:28px 14px 10px;font-size:11.5px;
+  color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.72));font-weight:600;letter-spacing:.02em}
+.figlab{font-size:12px;opacity:.62;margin-top:10px;line-height:1.5}
+
+/* informações de referência */
+.igrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.icard{border:1px solid var(--line);border-radius:12px;padding:16px 18px;background:var(--soft)}
+.ilbl{display:block;font-size:10.5px;text-transform:uppercase;letter-spacing:.16em;
+  font-weight:700;color:var(--acc);margin-bottom:6px}
+.ibody{margin:0;font-size:15px;line-height:1.5}
+.src-note{font-size:13px;opacity:.66;margin-top:16px;max-width:70ch}
+
+/* faixa de CTA final */
+.ctaband{background:var(--ink);color:var(--bg)}
+.ctaband .kick{color:var(--acc2)}
+.ctaband-in{display:grid;gap:26px;align-items:center}
+.ctaband h2{max-width:22ch}
+.ctaband p{opacity:.82;max-width:52ch}
+.ctaband-acts{display:flex;flex-wrap:wrap;gap:12px}
+.ctaband .btn-studio{background:var(--acc);border-color:var(--acc);color:var(--on-acc)}
+.ctaband .btn-shop{background:transparent;color:var(--bg);border-color:color-mix(in srgb, var(--bg) 40%, transparent)}
+.ctaband .btn-shop:hover{border-color:var(--bg)}
+@media (min-width:880px){
+  .ctaband-in{grid-template-columns:1.2fr .8fr}
+}
+
+/* rodapé */
+footer{padding:34px 0 58px;font-size:13px;color:var(--mut);border-top:1px solid var(--line);background:var(--bg2)}
+.foot p{margin-bottom:8px}
+.foot-name{font-family:var(--fd);font-size:15px;font-weight:700;color:var(--ink)}
+.foot-links a{text-decoration:underline;text-underline-offset:2px}
+
+/* seções padrão */
+.sec{scroll-margin-top:100px}
+.sec > .wrap > h2{max-width:30ch}
+
+/* ---------- variações de hero por loja (diferencia o arquetipo) ---------- */
+/* split (padrão): texto | foto */
+.hv--split .hero-in{grid-template-columns:1.05fr .95fr;gap:clamp(24px,4vw,52px);align-items:center}
+@media (max-width:899px){.hv--split .hero-in{grid-template-columns:1fr}}
+/* split2: foto à esquerda, texto à direita */
+.hv--split2 .hero-in{grid-template-columns:.95fr 1.05fr;gap:clamp(24px,4vw,52px);align-items:center}
+@media (min-width:900px){.hv--split2 .hero-in > div:first-child{order:2}}
+@media (max-width:899px){.hv--split2 .hero-in{grid-template-columns:1fr}.hv--split2 .hero-in > div:first-child{order:0}}
+/* center: texto central, foto abaixo em largura total */
+.hv--center .hero-in{display:flex;flex-direction:column;align-items:center;text-align:center;gap:clamp(26px,4vw,44px)}
+.hv--center .hero-text{max-width:44ch}
+.hv--center .hero .btnrow{justify-content:center}
+.hv--center .hero .tagrow{justify-content:center}
+.hv--center .hero-fig{width:100%;max-width:880px}
+/* center2: texto central, foto abaixo em coluna estreita */
+.hv--center2 .hero-in{display:flex;flex-direction:column;align-items:center;text-align:center;gap:clamp(26px,4vw,44px)}
+.hv--center2 .hero-text{max-width:40ch}
+.hv--center2 .hero .btnrow{justify-content:center}
+.hv--center2 .hero .tagrow{justify-content:center}
+.hv--center2 .hero-fig{width:100%;max-width:560px}
+/* colorblock: campo de cor da marca + tipografia pesada */
+.hv--colorblock .hero{background:var(--acc);color:var(--on-acc)}
+.hv--colorblock .hero h1{color:var(--on-acc)}
+.hv--colorblock .hero h1 .hot,.hv--colorblock .hero h1 .x,.hv--colorblock .hero h1 em{color:var(--ink)}
+.hv--colorblock .hero .lead{opacity:.94;max-width:46ch}
+.hv--colorblock .hero-in{grid-template-columns:1fr;gap:0}
+.hv--colorblock .hero .btn-studio{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.hv--colorblock .hero .btn-studio:hover{background:transparent;color:var(--ink);border-color:var(--ink)}
+.hv--colorblock .hero .btn-shop{background:transparent;color:var(--on-acc);border-color:color-mix(in srgb,var(--on-acc) 55%,transparent)}
+.hv--colorblock .hero .btn-shop:hover{border-color:var(--on-acc)}
+.hv--colorblock .hero .tag{border-color:color-mix(in srgb,var(--on-acc) 45%,transparent);color:var(--on-acc);opacity:.92}
+.hv--colorblock .hero-fig{margin-top:clamp(22px,4vw,40px);max-width:680px}
+.hv--colorblock .figlab{color:var(--on-acc);opacity:.85}
+
+/* selo de conceito por loja */
+.concept-chip{display:inline-block;margin-top:14px;font-size:12px;font-weight:800;
+  letter-spacing:.16em;text-transform:uppercase;padding:7px 14px;border-radius:999px;
+  background:var(--acc);color:var(--on-acc)}
+.concept-chip--cb{background:var(--ink);color:var(--acc)}
+
+
+.hero{padding-block:clamp(2.8rem,6vw,5rem);border-bottom:1px solid var(--line)}
+.hero-in{display:grid;gap:clamp(24px,4vw,56px);align-items:center}
+@media(min-width:900px){.hero-in{grid-template-columns:1.1fr .9fr}}
+.hero h1{font-size:clamp(2.3rem,1.5rem + 4.2vw,4.2rem);font-weight:600}
+.hero .lead{font-size:clamp(1.02rem,1rem + .5vw,1.25rem);opacity:.82;max-width:48ch;margin-top:16px}
+.rule{width:52px;height:3px;background:var(--acc);margin:0 0 18px}
+.ph-stack{position:relative}
+.ph-stack .ph:first-child{aspect-ratio:4/3}
+.ph-stack .ph-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+.ph-stack .ph-row .ph{aspect-ratio:1/1}
+.svc-list{margin-top:8px;border-top:1px solid var(--line)}
+.svc-row{display:grid;gap:6px 18px;padding:16px 0;border-bottom:1px solid var(--line)}
+@media(min-width:720px){.svc-row{grid-template-columns:220px 1fr;align-items:baseline}}
+.svc-row b{font-family:var(--fd);font-size:17px}
+.svc-row small{opacity:.75;font-size:14px;line-height:1.55}
+.cols2{display:grid;gap:clamp(20px,3vw,36px)}
+@media(min-width:760px){.cols2{grid-template-columns:1fr 1fr}}
+.hint{background:var(--soft);border-left:3px solid var(--acc2);border-radius:0 10px 10px 0;
+  padding:14px 18px;font-size:14px;line-height:1.55}
+.hint b{display:block;margin-bottom:4px;font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:var(--acc2)}
+
+</style>
+</head><a class="skip" href="#conteudo">Pular para o conteúdo</a><div class="demo-bar" role="note" aria-label="Aviso de demonstração"><div class="wrap demo-in"><strong>Demonstração de conceito</strong> — conteúdo ilustrativo, não é o site oficial.· <a href="https://wa.me/5541988887777?text=Ol%C3%A1%21%20Vi%20o%20aviso%20da%20demonstra%C3%A7%C3%A3o%20e%20quero%20um%20site%20assim%20para%20o%20meu%20com%C3%A9rcio." target="_blank" rel="noopener">criado pelo estúdio — falar</a></div></div><header class="hd"><div class="wrap hd-in"><a class="hd-logo" href="#top">Papelaria Mil Cores</a><nav class="hd-nav" aria-label="Seções da página"><a href="#servicos" aria-label="Serviços">Serviços</a><a href="#dicas" aria-label="Dicas">Dicas</a><a href="#info" aria-label="Contato">Contato</a></nav></div></header><main id="conteudo"><section class="hero hv--split2" id="top"><div class="wrap hero-in"><div class="hero-text"><div class="rule"></div><span class="hero-kicker">Papelaria · Santa Amélia, Belo Horizonte</span><h1>Papelaria <span style="color:#3f5a45">Mil Cores</span></h1><p class="lead">Um nome colorido pede um site colorido — mas organizado. Assim a papelaria ajuda o cliente a achar tudo em minutos.</p><span class="concept-chip">papelaria colorida</span><div class="btnrow"><a class="btn btn-studio" href="https://wa.me/5541988887777?text=Ol%C3%A1%21%20Vi%20a%20demonstra%C3%A7%C3%A3o%20de%20Papelaria%20Mil%20Cores%20%28Belo%20Horizonte%29%20na%20vitrine%20de%20sites%20e%20quero%20um%20site%20assim%20para%20o%20meu%20com%C3%A9rcio.%20Qual%20o%20pr%C3%B3ximo%20passo%3F" target="_blank" rel="noopener" aria-label="Quero um site assim — conversa com o estúdio que cria o site">Quero um site assim <span class="who">fala com o estúdio</span></a><a class="btn btn-shop" href="tel:3134941121" aria-label="Falar com Papelaria Mil Cores — contato do comércio">☎ Falar com Papelaria Mil Cores</a></div></div><div class="hero-fig"><div class="ph-stack"><figure class="ph"><img src="https://images.unsplash.com/photo-1503602642458-232111445657?w=1000&amp;q=80&amp;fm=jpg" alt="A vitrine da loja" width="1000" height="750" fetchpriority="high" decoding="async"></figure><div class="ph-row"><figure class="ph"><img src="https://images.unsplash.com/photo-1544816155-12df9643f363?w=1000&amp;q=80&amp;fm=jpg" alt="O balcão de atendimento" width="1000" height="750" loading="lazy" decoding="async"></figure><figure class="ph"><img src="https://images.unsplash.com/photo-1568205612837-017257d2310a?w=1000&amp;q=80&amp;fm=jpg" alt="O material em prateleira" width="1000" height="750" loading="lazy" decoding="async"></figure></div><p class="figlab">Fotos de banco (Unsplash/Wikimedia, licenças livres) ilustrando a proposta — o site final usa fotos e dados do próprio comércio, aprovados pelo dono.</p></div></div></div></section><section class="sec" id="servicos"><div class="wrap"><span class="kick">O que a loja resolve</span><h2>Os departamentos da papelaria, em vitrine</h2><div class="svc-list"><div class="svc-row"><b>Cores &amp; traço</b><small>Lápis de cor, giz de cera, aquarela e marcadores — o coração de um nome assim.</small></div><div class="svc-row"><b>Material escolar</b><small>O básico de todo início de aula, pronto e organizado.</small></div><div class="svc-row"><b>Artesanato &amp; criação</b><small>Papelaria para quem cria: washi, carimbos, tinta.</small></div><div class="svc-row"><b>Serviços de balcão</b><small>Cópias e serviços rápidos, se a loja oferecer.</small></div></div><p class="src-note">Serviços listados como proposta de vitrine — o comércio confirma quais oferece de fato antes da publicação.</p></div></section><section class="sec" id="dicas" style="background:var(--bg2)"><div class="wrap"><span class="kick">Antes de comprar</span><h2>Pequenas dicas, grandes compras</h2><div class="cols2"><div class="hint"><b>Monte a lista por cor</b>Para kits de cores, anote quantidades por tom — facilita a compra em lote.</div><div class="hint"><b>Teste antes</b>Lápis e canetas variam entre lotes: teste um antes de comprar o jogo, se possível.</div><div class="hint"><b>Tamanho importa</b>Formato de papel e caneta muda entre marcas — confira a medida que a escola pede.</div><div class="hint"><b>Compre pela estação</b>Itens de arte vendem o ano todo; o material escolar tem pico em fevereiro e agosto.</div></div></div></section><section class="sec sec-info" id="info"><div class="wrap"><span class="kick">Informações de referência</span><h2>Onde e como encontrar</h2><div class="igrid"><div class="icard"><span class="ilbl">Endereço</span><p class="ibody">Avenida Guarapari, 886 - CEP 31560-000</p></div><div class="icard"><span class="ilbl">Horário de referência</span><p class="ibody">Seg a Sex 7h-20h; Sáb 8h-19h</p></div><div class="icard"><span class="ilbl">Telefone / WhatsApp</span><p class="ibody"><a href="tel:3134941121">(31) 3494-1121</a></p></div><div class="icard"><span class="ilbl">Instagram</span><p class="ibody"><a href="https://instagram.com/papelaria.milcores" target="_blank" rel="noopener">@papelaria.milcores</a></p></div></div><p class="src-note">Endereço, telefone e horário foram coletados em fontes públicas (diretórios e páginas públicas do comércio) e <strong>a ser confirmados pelo próprio comércio</strong> antes de o site final ir para o ar.</p></div></section><section class="sec ctaband"><div class="wrap ctaband-in"><div class="ctaband-txt"><h2>Mil cores cabem em um bom site</h2><p>Conceito não oficial da Papelaria Mil Cores — acervo real, fotos e serviços confirmados entram no site final.</p></div><div class="ctaband-acts"><a class="btn btn-studio" href="https://wa.me/5541988887777?text=Ol%C3%A1%21%20Vi%20a%20demonstra%C3%A7%C3%A3o%20de%20Papelaria%20Mil%20Cores%20%28Belo%20Horizonte%29%20na%20vitrine%20de%20sites%20e%20quero%20um%20site%20assim%20para%20o%20meu%20com%C3%A9rcio.%20Qual%20o%20pr%C3%B3ximo%20passo%3F" target="_blank" rel="noopener" aria-label="Quero um site assim — conversa com o estúdio que cria o site">Quero um site assim <span class="who">fala com o estúdio</span></a><a class="btn btn-shop" href="tel:3134941121" aria-label="Falar com Papelaria Mil Cores — contato do comércio">☎ Falar com Papelaria Mil Cores</a></div></div></section></main><footer><div class="wrap foot"><p class="foot-name">Papelaria Mil Cores — Santa Amélia · Belo Horizonte</p><p>Conceito de <em>papelaria</em> feito pela equipe da vitrine — demonstração não oficial, sem vínculo com o comércio. Fotos: ilustrativas (Creative Commons/Unsplash) salvo indicação contrária. No site final entram dados, fotos e cardápio reais, aprovados pelo dono.</p><p class="foot-links"><a href="/vitrine-demos/">voltar à vitrine</a> · <a href="https://wa.me/5541988887777?text=Ol%C3%A1%21%20Quero%20um%20site%20para%20o%20meu%20com%C3%A9rcio." target="_blank" rel="noopener">quero um site assim</a></p></div></footer></body></html>

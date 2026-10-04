@@ -1,123 +1,206 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Moreira Lanches — Belo Horizonte</title>
-<meta name="description" content="Lanchonete · BH Moreira Lanches em Belo Horizonte: Lanches na chapa, batata crocante e aquele milk-shake para fechar. Tradição de bairro em Belo Horizonte.">
-<meta property="og:title" content="Moreira Lanches">
-<meta property="og:description" content="Lanchonete · BH">
+<title>Moreira Lanches — conceito de site (lanchonete) · Belo Horizonte</title>
+<meta name="description" content="Proposta de site para Moreira Lanches, lanchonete em Belo Horizonte. Demonstração de conceito: dados de referência e fotos ilustrativas.">
+<meta property="og:title" content="Moreira Lanches — conceito de site (lanchonete) · Belo Horizonte">
+<meta property="og:description" content="Proposta de site para Moreira Lanches, lanchonete em Belo Horizonte. Demonstração de conceito: dados de referência e fotos ilustrativas.">
 <meta property="og:type" content="website">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anton:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta property="og:image" content="https://images.unsplash.com/photo-1607013251379-e6eecfffe234?w=1000&amp;q=80&amp;fm=jpg">
+<meta name="theme-color" content="#191512">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{
-  --bg:#FFF8EF; --ink:#2B1B12; --acc:#D64528; --acc2:#E8A93C;
-  --soft:#FBEAD7; --line:#EAD9C4; --glow:transparent;
-  --fd:'Anton',serif; --fb:'Work Sans',sans-serif;
-}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--fb);font-size:clamp(15px,.95rem + .3vw,17px);line-height:1.6;-webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block}
-a{color:inherit}
-h1,h2,h3{font-family:var(--fd);line-height:1.05;margin:0;font-weight:700}
-.wrap{max-width:1080px;margin:0 auto;padding:0 clamp(18px,4vw,40px)}
-section{padding-block:clamp(3rem,7vw,6rem)}
-.kick{font-family:var(--fb);text-transform:uppercase;letter-spacing:.18em;font-size:12px;font-weight:600;opacity:.75}
-h2{font-size:clamp(1.9rem,1.4rem + 2.4vw,3rem);margin-bottom:clamp(1.4rem,3vw,2.4rem)}
-.btn{display:inline-block;padding:14px 26px;border-radius:8px;font-weight:700;font-size:15px;text-decoration:none;border:2px solid var(--ink);transition:transform .15s ease, box-shadow .15s ease}
-.btn:hover{transform:translateY(-2px)}
-.btn.acc{background:var(--acc);border-color:var(--acc);color:#fff}
-.btn.ghost{background:transparent}
-.map{border-radius:12px;overflow:hidden;border:1px solid var(--line)}
-.map iframe{width:100%;height:340px;border:0;display:block}
-footer{padding:34px 0 56px;font-size:13px;opacity:.7;border-top:1px solid var(--line)}
-.mcat{font-size:13px;text-transform:uppercase;letter-spacing:.16em;font-weight:700;margin:clamp(1.6rem,3vw,2.4rem) 0 .7rem;opacity:.85}
-.menu .mi{display:flex;align-items:baseline;gap:10px;padding:.45rem 0}
-.menu .mi span:first-child{font-weight:600;white-space:nowrap}
-.menu .mi .dots{flex:1;border-bottom:2px dotted var(--line);transform:translateY(-4px);min-width:24px}
-.menu .mi em{font-style:normal;font-weight:700;white-space:nowrap}
-.menu .mi small{display:block;flex-basis:100%;opacity:.7;font-size:13px}
-.menu .mi{flex-wrap:wrap}
-.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px}
-.tile{border:1px solid var(--line);border-radius:10px;padding:16px;background:var(--soft)}
-.tile b{display:block;font-size:15px;margin-bottom:4px}
-.tile small{opacity:.7;font-size:13px;line-height:1.45;display:block}
-.chips{display:flex;flex-wrap:wrap;gap:8px}
-.chips .chip{border:2px solid var(--ink);border-radius:999px;padding:7px 16px;font-weight:600;font-size:13.5px}
-.artists{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}
-.artist{border:1px solid var(--line);border-radius:12px;padding:18px;background:var(--soft)}
-.artist b{font-size:16px;display:block;margin-bottom:2px}
-.artist small{opacity:.7;font-size:13px;display:block;margin-bottom:10px}
-.artist .tag{display:inline-block;font-size:11.5px;border:1px solid var(--line);border-radius:999px;padding:3px 10px;margin:2px 4px 0 0}
-.infogrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
-.info-card{border:1px solid var(--line);border-radius:12px;padding:18px;background:var(--soft)}
-.info-card .lbl{font-size:11px;text-transform:uppercase;letter-spacing:.14em;opacity:.6;display:block;margin-bottom:6px}
-.info-card p{margin:0;font-size:15px}
-.shot{position:relative;border-radius:12px;overflow:hidden;aspect-ratio:4/3}
-.shot img{width:100%;height:100%;object-fit:cover}
-.shot .cap{position:absolute;left:0;right:0;bottom:0;padding:26px 14px 12px;font-size:12.5px;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.65))}
-.galnote{font-size:12.5px;opacity:.6;margin-top:12px}
 
-.nav{position:sticky;top:0;z-index:9;background:var(--bg);border-bottom:4px double var(--acc)}
-.navin{display:flex;align-items:center;justify-content:space-between;padding-block:14px}
-.logo{font-family:var(--fd);font-size:22px;font-weight:900;letter-spacing:.5px;text-decoration:none;color:var(--ink)}
-.nl{display:flex;gap:20px;flex-wrap:wrap}
-.nl a{text-decoration:none;font-weight:600;font-size:14px;opacity:.85}
-.nl a:hover{color:var(--acc);opacity:1}
-.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(20px,4vw,48px);align-items:center;padding-block:clamp(2.5rem,6vw,5rem)}
-.hero .kicker{display:inline-block;background:var(--acc);color:#fff;font-weight:700;font-size:12px;letter-spacing:.2em;text-transform:uppercase;padding:6px 14px;border-radius:4px;transform:rotate(-2deg)}
-.hero h1{font-size:clamp(2.4rem,1.6rem + 4vw,4.2rem);margin:.5rem 0 .8rem}
-.hero h1 .hl{color:var(--acc)}
-.hero p.lead{font-size:18px;max-width:46ch;opacity:.9;margin:0 0 1.4rem}
-.hero .cta{display:flex;gap:12px;flex-wrap:wrap}
-.checker{height:22px;background:repeating-conic-gradient(var(--ink) 0% 25%, var(--bg) 0% 50%) 0 0/22px 22px;opacity:.9}
-.menu-board{background:var(--soft);border:3px solid var(--ink);border-radius:14px;padding:clamp(18px,3vw,30px)}
-.menu-board h3{font-size:20px;margin:0 0 4px}
-.menu-board .sub{font-size:13px;opacity:.65;margin:0 0 8px}
-.photo-strip{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.photo-strip .shot:first-child{grid-column:1/-1}
-.about{background:var(--acc);color:#fff}
-.about h2{color:#fff}
-.about .lead{max-width:60ch;font-size:17px}
-.pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:1.6rem}
-.pillar{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.35);border-radius:12px;padding:18px}
-.pillar b{display:block;font-size:16px;margin-bottom:6px;font-family:var(--fd)}
-.pillar p{margin:0;font-size:14px;opacity:.92}
-.cta-band{background:var(--ink);color:var(--bg);text-align:center}
-.cta-band h2{color:var(--bg)}
-.cta-band p{opacity:.85;max-width:52ch;margin:0 auto 1.4rem}
-.cta-band .btn.acc{color:var(--ink)}
-@media(max-width:760px){.hero{grid-template-columns:1fr}.photo-strip .shot:first-child{grid-column:auto}}
-</style></head><body><div class="nav"><div class="wrap navin"><a class="logo" href="#top">Moreira Lanches</a><nav class="nl"><a href="#cardapio">Cardápio</a><a href="#casa">A casa</a><a href="#contato">Contato</a></nav></div></div>
-<header id="top"></header>
-<section class="hero"><div class="wrap">
-<div>
-<span class="kicker">Lanchonete · BH</span>
-<h1>Moreira <span class="hl">à la carte</span></h1>
-<p class="lead">Lanches na chapa, batata crocante e aquele milk-shake para fechar. Tradição de bairro em Belo Horizonte.</p>
-<div class="cta"><a class="btn acc" href="https://wa.me/5541988887777?text=Olá! Vi o site de demonstração do Moreira Lanches em Belo Horizonte que vocês montaram. Podem deixar pronto com as minhas fotos? Quanto fica?" target="_blank" rel="noopener">Chamar no WhatsApp</a><a class="btn ghost" href="tel:3132714481">☎ (31) 3271-4481</a></div>
-</div>
-<div><div class="shot"><img src="https://images.unsplash.com/photo-1607013251379-e6eecfffe234?w=1000&q=80&fm=jpg" alt="Da chapa para a mesa" loading="lazy"><span class="cap">Da chapa para a mesa</span></div><div class="shot"><img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Aioli_Burger_Food_Truck.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled" alt="Porções da casa" loading="lazy"><span class="cap">Porções da casa</span></div><div class="shot"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Argentine_chicken_burger_%28gourmet%29.jpg/1280px-Argentine_chicken_burger_%28gourmet%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="O cantinho do balcão" loading="lazy"><span class="cap">O cantinho do balcão</span></div><p class="galnote">Fotos ilustrativas do ambiente — as fotos reais da casa entram no site final.</p></div>
-</div></section>
-<div class="checker"></div>
-<section id="cardapio"><div class="wrap">
-<span class="kick">Cardápio</span>
-<h2>O que está servindo</h2>
-<div class="menu"><div class="mcat">Lanches &amp; Burgers</div><div class="mi"><span>X-Bacon Clássico</span><span class="dots"></span><em>R$ 22,90</em><small>Pão brioche, burger 150g, bacon crocante, maionese defumada e alface.</small></div><div class="mi"><span>Moreira Especial</span><span class="dots"></span><em>R$ 26,90</em><small>Dois burgers, dobro de queijo, cebola caramelizada e barbecue da casa.</small></div><div class="mi"><span>Misto de Queijo</span><span class="dots"></span><em>R$ 12,90</em><small>Pão de forma, presunto, queijo e ovo. O básico bem feito.</small></div><div class="mi"><span>X-Salada</span><span class="dots"></span><em>R$ 19,90</em><small>Burger 150g, queijo prato, alface americana, tomate e maionese verde.</small></div><div class="mi"><span>Pão na Chapa</span><span class="dots"></span><em>R$ 8,90</em><small>Pão de queijo ou francês na chapa, com manteiga e queijo.</small></div><div class="mcat">Porções &amp; Adicionais</div><div class="mi"><span>Batata Frita (méd.)</span><span class="dots"></span><em>R$ 14,90</em><small>Crocante por fora, macia por dentro. Salsinha e sal.</small></div><div class="mi"><span>Batata Frita (gr.)</span><span class="dots"></span><em>R$ 19,90</em><small>Para compartilhar — ou não.</small></div><div class="mi"><span>Frango à Passarinho</span><span class="dots"></span><em>R$ 24,90</em><small>Iscas de frango empanadas, bem sequinhas.</small></div><div class="mi"><span>Onion Rings</span><span class="dots"></span><em>R$ 13,90</em><small>Anéis de cebola empanados com molho da casa.</small></div><div class="mcat">Bebidas &amp; Sobremesas</div><div class="mi"><span>Refrigerante Lata</span><span class="dots"></span><em>R$ 6,00</em><small>Coca, Guaraná, Fanta ou Soda.</small></div><div class="mi"><span>Suco Natural (500ml)</span><span class="dots"></span><em>R$ 9,90</em><small>Laranja, abacaxi, maracujá ou abacaxi com hortelã.</small></div><div class="mi"><span>Milk-shake (400ml)</span><span class="dots"></span><em>R$ 15,90</em><small>Chocolate, morango, baunilha ou coco.</small></div><div class="mi"><span>Pudim da Casa</span><span class="dots"></span><em>R$ 9,50</em><small>Fatia generosa, calda de caramelo.</small></div></div>
-</div></section>
-<section id="casa" class="about"><div class="wrap">
-<span class="kick">A casa</span>
-<h2>Feito na chapa, servido no ponto.</h2>
-<p class="lead">A Moreira nasceu no coração de Belo Horizonte para servir lanches de verdade: pão bom, burger grelhado na hora e porções generosas. Aqui cada lanche sai da chapa direto para a sua mão, do jeito que a gente gosta.</p>
-<div class="pillars"><div class="pillar"><b>Da chapa para você</b><p>Tudo é preparo imediato, sem congelado.</p></div><div class="pillar"><b>Ingredientes frescos</b><p>Pão, queijo e carne selecionados todo dia.</p></div><div class="pillar"><b>Preço honesto</b><p>Qualidade de lanchonete de bairro, sem luxo.</p></div><div class="pillar"><b>Ambiente acolhedor</b><p>Para comer no local ou pedir para levar.</p></div></div>
-</div></section>
-<section class="cta-band"><div class="wrap">
-<h2>Vem provar</h2>
-<p>Belo Horizonte · Centro. 05h às 21h Avenida Santos Dumont, 577 - CEP 30111-040</p>
-<a class="btn acc" href="https://wa.me/5541988887777?text=Olá! Vi o site de demonstração do Moreira Lanches em Belo Horizonte que vocês montaram. Podem deixar pronto com as minhas fotos? Quanto fica?" target="_blank" rel="noopener">Chamar no WhatsApp</a> <a class="btn ghost" href="tel:3132714481">☎ (31) 3271-4481</a>
-</div></section>
-<section id="contato"><div class="wrap">
-<span class="kick">Contato</span>
-<h2>Onde estamos</h2>
-<div class="infogrid"><div class="info-card"><span class="lbl">Endereço</span><p>Avenida Santos Dumont, 577 - CEP 30111-040</p></div><div class="info-card"><span class="lbl">Horário</span><p>05h às 21h</p></div><div class="info-card"><span class="lbl">Telefone</span><p><a href="tel:3132714481">(31) 3271-4481</a></p></div><div class="info-card"><span class="lbl">Cidade</span><p>Centro · Belo Horizonte</p></div><div class="info-card"><span class="lbl">Instagram</span><p><a href="https://instagram.com/moreiralanchesbh" target="_blank" rel="noopener">@moreiralanchesbh</a></p></div></div>
-<div style="margin-top:18px"><div class="map"><iframe loading="lazy" src="https://www.google.com/maps?q=Moreira+Lanches+Belo+Horizonte&output=embed" title="Mapa"></iframe></div></div>
-</div></section>
-<footer><div class="wrap">Moreira Lanches · Centro — Belo Horizonte<br>Praça virtual de demonstração. Fotos e itens de exemplo; no site final entram as fotos e o cardápio reais da casa.</div></footer>
-</body></html>
+:root{
+  --bg:#191512; --bg2:#211b16; --ink:#f5efe4;
+  --mut:#b3a992; --acc:#e2472b; --acc2:#f0b64a;
+  --soft:#2a221b; --line:rgba(245,239,228,.16);
+  --on-acc:#fff3ec;
+  --fd:'Fraunces',serif; --fb:'Inter',sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--fb);
+  font-size:clamp(15.5px,.9rem + .35vw,17.5px);line-height:1.62;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration-thickness:1px;text-underline-offset:2.5px}
+h1,h2,h3{font-family:var(--fd);line-height:1.06;margin:0;letter-spacing:-.01em}
+p{margin:0 0 1em}
+section{padding-block:clamp(3rem,7vw,5.5rem)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 clamp(18px,4.5vw,44px)}
+.kick{display:inline-block;font-family:var(--fb);text-transform:uppercase;
+  letter-spacing:.2em;font-size:11.5px;font-weight:700;color:var(--acc);margin-bottom:14px}
+h2{font-size:clamp(1.85rem,1.35rem + 2.6vw,3.1rem);margin-bottom:clamp(1.2rem,2.5vw,2rem)}
+
+/* acessibilidade */
+.skip{position:absolute;left:-9999px;top:0;background:var(--ink);color:var(--bg);
+  padding:10px 18px;z-index:100;font-weight:700}
+.skip:focus{left:12px;top:12px}
+:focus-visible{outline:3px solid var(--acc);outline-offset:3px;border-radius:4px}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{animation:none!important;transition:none!important}
+}
+
+/* banner de demonstração — no topo (fixo; a nav fica sticky abaixo dele) */
+.demo-bar{background:var(--ink);color:var(--bg);
+  font-size:12.5px;line-height:1.5;padding:8px 0}
+.demo-in{display:flex;flex-wrap:wrap;gap:4px 14px;align-items:baseline}
+.demo-bar strong{font-weight:800;letter-spacing:.04em;text-transform:uppercase;font-size:11px}
+.demo-bar a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+.demo-bar a:hover{opacity:.85}
+
+/* cabeçalho */
+.hd{position:sticky;top:0;z-index:50;background:color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line)}
+.demo-bar + .hd{top:0}
+.hd-in{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:14px;padding-bottom:14px}
+.hd-logo{font-family:var(--fd);font-weight:700;font-size:clamp(1.05rem,1rem + .4vw,1.25rem);
+  text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:62vw}
+.hd-nav{display:flex;gap:clamp(12px,2.4vw,26px);font-size:14px;font-weight:600}
+.hd-nav a{text-decoration:none;opacity:.78;padding:6px 2px;white-space:nowrap}
+.hd-nav a:hover{opacity:1;text-decoration:underline}
+@media (max-width:640px){
+  .hd-nav{display:none}
+  .hd-in{padding-top:12px;padding-bottom:12px}
+}
+
+/* botões honestos */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  padding:14px 24px;border-radius:10px;font-weight:700;font-size:15px;line-height:1.2;
+  text-decoration:none;border:2px solid transparent;cursor:pointer;
+  transition:transform .15s ease, box-shadow .15s ease, background .15s ease;min-height:48px}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(0)}
+.btn .who{font-size:11px;font-weight:600;opacity:.85;text-transform:uppercase;letter-spacing:.08em}
+.btn-studio{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.btn-studio:hover{background:var(--acc);border-color:var(--acc);color:var(--on-acc)}
+.btn-shop{background:var(--acc);color:var(--on-acc);border-color:var(--acc)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--ink)}
+.btnrow{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:clamp(1.2rem,2.5vw,1.8rem)}
+
+/* fotos */
+.ph{position:relative;margin:0;border-radius:14px;overflow:hidden;background:var(--soft)}
+.ph img{width:100%;height:100%;object-fit:cover}
+.ph-cap{position:absolute;left:0;right:0;bottom:0;padding:28px 14px 10px;font-size:11.5px;
+  color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.72));font-weight:600;letter-spacing:.02em}
+.figlab{font-size:12px;opacity:.62;margin-top:10px;line-height:1.5}
+
+/* informações de referência */
+.igrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.icard{border:1px solid var(--line);border-radius:12px;padding:16px 18px;background:var(--soft)}
+.ilbl{display:block;font-size:10.5px;text-transform:uppercase;letter-spacing:.16em;
+  font-weight:700;color:var(--acc);margin-bottom:6px}
+.ibody{margin:0;font-size:15px;line-height:1.5}
+.src-note{font-size:13px;opacity:.66;margin-top:16px;max-width:70ch}
+
+/* faixa de CTA final */
+.ctaband{background:var(--ink);color:var(--bg)}
+.ctaband .kick{color:var(--acc2)}
+.ctaband-in{display:grid;gap:26px;align-items:center}
+.ctaband h2{max-width:22ch}
+.ctaband p{opacity:.82;max-width:52ch}
+.ctaband-acts{display:flex;flex-wrap:wrap;gap:12px}
+.ctaband .btn-studio{background:var(--acc);border-color:var(--acc);color:var(--on-acc)}
+.ctaband .btn-shop{background:transparent;color:var(--bg);border-color:color-mix(in srgb, var(--bg) 40%, transparent)}
+.ctaband .btn-shop:hover{border-color:var(--bg)}
+@media (min-width:880px){
+  .ctaband-in{grid-template-columns:1.2fr .8fr}
+}
+
+/* rodapé */
+footer{padding:34px 0 58px;font-size:13px;color:var(--mut);border-top:1px solid var(--line);background:var(--bg2)}
+.foot p{margin-bottom:8px}
+.foot-name{font-family:var(--fd);font-size:15px;font-weight:700;color:var(--ink)}
+.foot-links a{text-decoration:underline;text-underline-offset:2px}
+
+/* seções padrão */
+.sec{scroll-margin-top:100px}
+.sec > .wrap > h2{max-width:30ch}
+
+/* ---------- variações de hero por loja (diferencia o arquetipo) ---------- */
+/* split (padrão): texto | foto */
+.hv--split .hero-in{grid-template-columns:1.05fr .95fr;gap:clamp(24px,4vw,52px);align-items:center}
+@media (max-width:899px){.hv--split .hero-in{grid-template-columns:1fr}}
+/* split2: foto à esquerda, texto à direita */
+.hv--split2 .hero-in{grid-template-columns:.95fr 1.05fr;gap:clamp(24px,4vw,52px);align-items:center}
+@media (min-width:900px){.hv--split2 .hero-in > div:first-child{order:2}}
+@media (max-width:899px){.hv--split2 .hero-in{grid-template-columns:1fr}.hv--split2 .hero-in > div:first-child{order:0}}
+/* center: texto central, foto abaixo em largura total */
+.hv--center .hero-in{display:flex;flex-direction:column;align-items:center;text-align:center;gap:clamp(26px,4vw,44px)}
+.hv--center .hero-text{max-width:44ch}
+.hv--center .hero .btnrow{justify-content:center}
+.hv--center .hero .tagrow{justify-content:center}
+.hv--center .hero-fig{width:100%;max-width:880px}
+/* center2: texto central, foto abaixo em coluna estreita */
+.hv--center2 .hero-in{display:flex;flex-direction:column;align-items:center;text-align:center;gap:clamp(26px,4vw,44px)}
+.hv--center2 .hero-text{max-width:40ch}
+.hv--center2 .hero .btnrow{justify-content:center}
+.hv--center2 .hero .tagrow{justify-content:center}
+.hv--center2 .hero-fig{width:100%;max-width:560px}
+/* colorblock: campo de cor da marca + tipografia pesada */
+.hv--colorblock .hero{background:var(--acc);color:var(--on-acc)}
+.hv--colorblock .hero h1{color:var(--on-acc)}
+.hv--colorblock .hero h1 .hot,.hv--colorblock .hero h1 .x,.hv--colorblock .hero h1 em{color:var(--ink)}
+.hv--colorblock .hero .lead{opacity:.94;max-width:46ch}
+.hv--colorblock .hero-in{grid-template-columns:1fr;gap:0}
+.hv--colorblock .hero .btn-studio{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.hv--colorblock .hero .btn-studio:hover{background:transparent;color:var(--ink);border-color:var(--ink)}
+.hv--colorblock .hero .btn-shop{background:transparent;color:var(--on-acc);border-color:color-mix(in srgb,var(--on-acc) 55%,transparent)}
+.hv--colorblock .hero .btn-shop:hover{border-color:var(--on-acc)}
+.hv--colorblock .hero .tag{border-color:color-mix(in srgb,var(--on-acc) 45%,transparent);color:var(--on-acc);opacity:.92}
+.hv--colorblock .hero-fig{margin-top:clamp(22px,4vw,40px);max-width:680px}
+.hv--colorblock .figlab{color:var(--on-acc);opacity:.85}
+
+/* selo de conceito por loja */
+.concept-chip{display:inline-block;margin-top:14px;font-size:12px;font-weight:800;
+  letter-spacing:.16em;text-transform:uppercase;padding:7px 14px;border-radius:999px;
+  background:var(--acc);color:var(--on-acc)}
+.concept-chip--cb{background:var(--ink);color:var(--acc)}
+
+
+.hero{padding-block:clamp(2.6rem,6vw,4.8rem)}
+.hero-in{display:grid;gap:clamp(24px,4vw,54px);align-items:center}
+@media(min-width:880px){.hero-in{grid-template-columns:1.15fr .85fr}}
+.hero h1{font-size:clamp(2.5rem,1.6rem + 4.6vw,4.6rem);font-weight:640}
+.hero h1 .hot{color:var(--acc);font-style:italic;font-weight:560}
+.hero .lead{font-size:clamp(1.05rem,1rem + .5vw,1.3rem);opacity:.85;max-width:46ch;margin-top:18px}
+.hero-kicker{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:12px;
+  text-transform:uppercase;letter-spacing:.22em;color:var(--acc2);margin-bottom:16px}
+.hero-kicker::before{content:"";width:26px;height:2px;background:var(--acc2);display:inline-block}
+.collage{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.collage .ph:first-child{grid-column:1/-1;aspect-ratio:16/9}
+.collage .ph{aspect-ratio:4/5}
+@media(max-width:520px){.collage .ph{aspect-ratio:4/3}}
+.dishband{background:var(--soft)}
+.dishes{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:8px}
+.dish{border:1px solid var(--line);border-radius:12px;padding:18px;background:var(--bg)}
+.dish b{display:block;font-family:var(--fd);font-size:16.5px;margin-bottom:6px}
+.dish small{opacity:.72;font-size:13.5px;line-height:1.5;display:block}
+.menu{border:1px solid var(--line);border-radius:16px;background:var(--bg);padding:clamp(20px,3.4vw,34px)}
+.menu-head{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:6px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 4px}
+.chip{border:1.5px solid var(--ink);border-radius:999px;padding:7px 15px;font-weight:600;font-size:13px}
+.menu-cols{display:grid;gap:6px clamp(20px,4vw,44px);margin-top:18px}
+@media(min-width:720px){.menu-cols{grid-template-columns:1fr 1fr}}
+.mcat{font-size:12px;text-transform:uppercase;letter-spacing:.18em;font-weight:700;color:var(--acc);margin:18px 0 8px}
+.mitem{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 10px;padding:7px 0;border-bottom:1px dashed var(--line)}
+.mitem span{font-weight:600}
+.mitem .dots{flex:1;border-bottom:2px dotted var(--line);transform:translateY(-4px);min-width:20px}
+.mitem em{font-style:normal;font-size:12px;font-weight:700;color:var(--acc2);background:var(--soft);
+  border:1px solid var(--line);border-radius:999px;padding:2px 10px;white-space:nowrap}
+.sample-note{display:flex;gap:12px;align-items:flex-start;background:var(--soft);border:1px dashed var(--acc);
+  border-radius:12px;padding:14px 16px;font-size:13.5px;line-height:1.55;margin-top:18px}
+.sample-note .ico{font-size:18px;line-height:1.2}
+.svcs{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.svc{border-top:3px solid var(--acc);padding-top:14px}
+.svc b{display:block;font-family:var(--fd);font-size:17px;margin-bottom:6px}
+.svc small{opacity:.75;font-size:13.5px;line-height:1.55;display:block}
+
+</style>
+</head><a class="skip" href="#conteudo">Pular para o conteúdo</a><div class="demo-bar" role="note" aria-label="Aviso de demonstração"><div class="wrap demo-in"><strong>Demonstração de conceito</strong> — conteúdo ilustrativo, não é o site oficial.· <a href="https://wa.me/5541988887777?text=Ol%C3%A1%21%20Vi%20o%20aviso%20da%20demonstra%C3%A7%C3%A3o%20e%20quero%20um%20site%20assim%20para%20o%20meu%20com%C3%A9rcio." target="_blank" rel="noopener">criado pelo estúdio — falar</a></div></div><header class="hd"><div class="wrap hd-in"><a class="hd-logo" href="#top">Moreira Lanches</a><nav class="hd-nav" aria-label="Seções da página"><a href="#cardapio" aria-label="Cardápio">Cardápio</a><a href="#casa" aria-label="A casa">A casa</a><a href="#servicos" aria-label="Serviços">Serviços</a><a href="#info" aria-label="Contato">Contato</a></nav></div></header><main id="conteudo"><section class="hero hv--split" id="top"><div class="wrap hero-in"><div class="hero-text"><span class="hero-kicker">Lanchonete · Centro, Belo Horizonte</span><h1>Moreira <span class="hot">Lanches</span></h1><p class="lead">Lanches, porções e bebidas para o dia a dia do bairro — e um site à altura para quem passa em frente todos os dias.</p><span class="concept-chip">cantina de bairro</span><div class="btnrow"><a class="btn btn-studio" href="https://wa.me/5541988887777?text=Ol%C3%A1%21%20Vi%20a%20demonstra%C3%A7%C3%A3o%20de%20Moreira%20Lanches%20%28Belo%20Horizonte%29%20na%20vitrine%20de%20sites%20e%20quero%20um%20site%20assim%20para%20o%20meu%20com%C3%A9rcio.%20Qual%20o%20pr%C3%B3ximo%20passo%3F" target="_blank" rel="noopener" aria-label="Quero um site assim — conversa com o estúdio que cria o site">Quero um site assim <span class="who">fala com o estúdio</span></a><a class="btn btn-shop" href="tel:3132714481" aria-label="Falar com Moreira Lanches — contato do comércio">☎ Falar com Moreira Lanches</a></div></div><div class="hero-fig"><div class="collage"><figure class="ph"><img src="https://images.unsplash.com/photo-1607013251379-e6eecfffe234?w=1000&amp;q=80&amp;fm=jpg" alt="Prova do balcão, na bancada" width="1000" height="750" fetchpriority="high" decoding="async"></figure><figure class="ph"><img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Aioli_Burger_Food_Truck.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail_unscaled" alt="O ambiente da casa" width="1000" height="750" loading="lazy" decoding="async"></figure><figure class="ph"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Argentine_chicken_burger_%28gourmet%29.jpg/1280px-Argentine_chicken_burger_%28gourmet%29.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail" alt="A mesa posta para o lanche" width="1000" height="750" loading="lazy" decoding="async"></figure><p class="figlab">Fotos de banco (Unsplash/Wikimedia, licenças livres) ilustrando a proposta — o site final usa fotos e dados do próprio comércio, aprovados pelo dono.</p></div></div></div></section><section class="sec dishband" id="casa"><div class="wrap"><span class="kick">O que rola por aqui</span><h2>O que uma lanchonete como a Moreira costuma servir</h2><div class="dish"><b>Lanches</b><small>Mistos, x-salgados e especialidades do balcão.</small></div><div class="dish"><b>Porções</b><small>Fritas, iscas e acompanhamentos para dividir.</small></div><div class="dish"><b>Bebidas</b><small>Refrigerantes, sucos e água para acompanhar.</small></div><div class="dish"><b>Doces</b><small>A opção doce para fechar a refeição.</small></div></div></section><section class="sec" id="cardapio"><div class="wrap"><span class="kick">Cardápio</span><h2>Formato do cardápio no site final</h2><div class="menu"><div class="menu-head"><span style="font-weight:600">Categorias do exemplo:</span><div class="chips"><span class="chip">Lanches</span><span class="chip">Porções</span><span class="chip">Bebidas &amp; Doces</span></div></div><div class="sample-note"><span class="ico">ℹ️</span><span><strong>Este cardápio é um exemplo de estrutura, não é o cardápio real do Moreira Lanches.</strong> Os pratos e os preços reais entram quando o comércio aprovar e enviar a lista — por isso nenhum preço aparece aqui.</span></div><div class="menu-cols"><div><div class="mcat">Lanches</div><div class="mitem"><span>Lanche da casa</span><span class="dots"></span><em>exemplo</em></div><div class="mitem"><span>Misto quente</span><span class="dots"></span><em>exemplo</em></div><div class="mitem"><span>X-salgado especial</span><span class="dots"></span><em>exemplo</em></div><div class="mitem"><span>Pão na chapa</span><span class="dots"></span><em>exemplo</em></div></div><div><div class="mcat">Porções</div><div class="mitem"><span>Batata frita</span><span class="dots"></span><em>exemplo</em></div><div class="mitem"><span>Frango a passarinho</span><span class="dots"></span><em>exemplo</em></div><div class="mitem"><span>Isca na chapa</span><span class="dots"></span><em>exemplo</em></div><div class="mitem"><span>Onion rings</span><span class="dots"></span><em>exemplo</em></div></div><div><div class="mcat">Bebidas &amp; Doces</div><div class="mitem"><span>Refrigerante lata</span><span class="dots"></span><em>exemplo</em></div><div class="mitem"><span>Suco natural</span><span class="dots"></span><em>exemplo</em></div><div class="mitem"><span>Milk-shake</span><span class="dots"></span><em>exemplo</em></div><div class="mitem"><span>Pudim</span><span class="dots"></span><em>exemplo</em></div></div></div></div></div></section><section class="sec dishband" id="servicos"><div class="wrap"><span class="kick">Formas de atender</span><h2>Pede do jeito que for melhor</h2><div class="svcs"><div class="svc"><b>No balcão</b><small>Atendimento no local — forma e horários a confirmar.</small></div><div class="svc"><b>Para levar</b><small>Pedido para retirada, se for o formato do balcão.</small></div><div class="svc"><b>Delivery</b><small>iFood ou entrega própria: o botão e o cardápio digital entram no site final, se o comércio operar.</small></div></div><p class="src-note">Formas de entrega e atendimento (balcão, retirada, delivery) a serem confirmadas pelo comércio antes da publicação final.</p></div></section><section class="sec sec-info" id="info"><div class="wrap"><span class="kick">Informações de referência</span><h2>Onde e como encontrar</h2><div class="igrid"><div class="icard"><span class="ilbl">Endereço</span><p class="ibody">Avenida Santos Dumont, 577 - CEP 30111-040</p></div><div class="icard"><span class="ilbl">Horário de referência</span><p class="ibody">05h às 21h</p></div><div class="icard"><span class="ilbl">Telefone / WhatsApp</span><p class="ibody"><a href="tel:3132714481">(31) 3271-4481</a></p></div><div class="icard"><span class="ilbl">Instagram</span><p class="ibody"><a href="https://instagram.com/moreiralanchesbh" target="_blank" rel="noopener">@moreiralanchesbh</a></p></div></div><p class="src-note">Endereço, telefone e horário foram coletados em fontes públicas (diretórios e páginas públicas do comércio) e <strong>a ser confirmados pelo próprio comércio</strong> antes de o site final ir para o ar.</p></div></section><section class="sec ctaband"><div class="wrap ctaband-in"><div class="ctaband-txt"><h2>Sua lanchonete pode ter um site assim</h2><p>Este é um conceito não oficial. Com as fotos, o cardápio real e a aprovação da Moreira, vira um site de verdade.</p></div><div class="ctaband-acts"><a class="btn btn-studio" href="https://wa.me/5541988887777?text=Ol%C3%A1%21%20Vi%20a%20demonstra%C3%A7%C3%A3o%20de%20Moreira%20Lanches%20%28Belo%20Horizonte%29%20na%20vitrine%20de%20sites%20e%20quero%20um%20site%20assim%20para%20o%20meu%20com%C3%A9rcio.%20Qual%20o%20pr%C3%B3ximo%20passo%3F" target="_blank" rel="noopener" aria-label="Quero um site assim — conversa com o estúdio que cria o site">Quero um site assim <span class="who">fala com o estúdio</span></a><a class="btn btn-shop" href="tel:3132714481" aria-label="Falar com Moreira Lanches — contato do comércio">☎ Falar com Moreira Lanches</a></div></div></section></main><footer><div class="wrap foot"><p class="foot-name">Moreira Lanches — Centro · Belo Horizonte</p><p>Conceito de <em>lanchonete</em> feito pela equipe da vitrine — demonstração não oficial, sem vínculo com o comércio. Fotos: ilustrativas (Creative Commons/Unsplash) salvo indicação contrária. No site final entram dados, fotos e cardápio reais, aprovados pelo dono.</p><p class="foot-links"><a href="/vitrine-demos/">voltar à vitrine</a> · <a href="https://wa.me/5541988887777?text=Ol%C3%A1%21%20Quero%20um%20site%20para%20o%20meu%20com%C3%A9rcio." target="_blank" rel="noopener">quero um site assim</a></p></div></footer></body></html>
