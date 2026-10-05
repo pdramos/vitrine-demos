@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Os 21 sites — prévia de todos</title>
+<style>
+  :root{
+    --bg:#0e0f12; --card:#16181d; --bord:#262a33; --tx:#e8eaf0; --mut:#9aa1b0; --acc:#5cc8c0;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--tx);font:14px/1.5 -apple-system,"Segoe UI",Roboto,sans-serif;padding:28px 22px 60px}
+  h1{font-size:22px;margin:0 0 4px}
+  .sub{color:var(--mut);margin:0 0 26px;font-size:13px}
+  .cat{margin:34px 0 0}
+  .cat>h2{font-size:13px;text-transform:uppercase;letter-spacing:.14em;color:var(--acc);margin:0 0 14px;border-bottom:1px solid var(--bord);padding-bottom:8px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+  .card{background:var(--card);border:1px solid var(--bord);border-radius:12px;overflow:hidden;display:flex;flex-direction:column;transition:border-color .15s}
+  .card:hover{border-color:#3d4453}
+  .thumb{position:relative;height:340px;background:#000;overflow:hidden;cursor:pointer}
+  .thumb iframe{width:1600px;height:800px;border:0;transform:scale(.4);transform-origin:top left;pointer-events:none}
+  .thumb .zoom{position:absolute;inset:0;background:rgba(0,0,0,0);transition:background .15s}
+  .card:hover .thumb .zoom{background:rgba(10,12,16,.35)}
+  .thumb .go{position:absolute;top:10px;right:10px;background:rgba(0,0,0,.65);color:#fff;font-size:12px;padding:5px 10px;border-radius:999px;opacity:0;transition:opacity .15s}
+  .card:hover .thumb .go{opacity:1}
+  .meta{padding:11px 13px;display:flex;justify-content:space-between;align-items:center;gap:8px}
+  .meta b{font-size:14px}
+  .meta small{color:var(--mut);display:block;font-weight:400}
+  .tag{font-size:11px;color:var(--mut);border:1px solid var(--bord);border-radius:999px;padding:2px 9px;white-space:nowrap}
+  .foot{margin-top:40px;color:var(--mut);font-size:12px;text-align:center}
+</style>
+</head>
+<body>
+<h1>Os 21 sites novos — prévia de todos</h1>
+<p class="sub">Estas são miniaturas ao vivo do que está publicado em <b>pdramos.github.io/vitrine-demos</b>. Passe o mouse e clique numa card para abrir o site inteiro.</p>
+
+<div class="cat"><h2>🍔 Lanchonetes — 5</h2><div class="grid" id="g-lanche"></div></div>
+<div class="cat"><h2>✒️ Papelarias / Livrarias — 4</h2><div class="grid" id="g-papelaria"></div></div>
+<div class="cat"><h2>🧱 Materiais de Construção — 3</h2><div class="grid" id="g-construcao"></div></div>
+<div class="cat"><h2>🖋️ Estúdios de Tatuagem — 9</h2><div class="grid" id="g-tattoo"></div></div>
+
+<div class="foot">Vitrine de conceitos — cada card abre o site completo publicado.</div>
+
+<script>
+const S = {
+  "g-lanche": [
+    ["zanatta-lanches","Zanatta Lanches","Porto Alegre","yellow · center"],
+    ["moreira-lanches","Moreira Lanches","Belo Horizonte","dark · split"],
+    ["companhia-do-lanche","Companhia do Lanche","Porto Alegre","colorblock · Anton"],
+    ["tia-lala","Tia Lala","Porto Alegre","warm dark · split2"],
+    ["lanchonete-guanas","Lanchonete Guanas","Belo Horizonte","beige · center2"]
+  ],
+  "g-papelaria": [
+    ["hong-papelaria","Hong Papelaria","Curitiba","dark green · serif"],
+    ["livraria-e-papelaria-candeia","Livraria e Papelaria Candeia","Belo Horizonte","cream · Lora"],
+    ["papelaria-maninho","Papelaria Maninho","Curitiba","light · Space Grotesk"],
+    ["papelaria-mil-cores","Papelaria Mil Cores","Belo Horizonte","pink · Bricolage"]
+  ],
+  "g-construcao": [
+    ["central-materiais-de-constru-o","Central Materiais de Construção","Belo Horizonte","beige · Anton"],
+    ["jm-materiais-para-constru-o","JM Materiais","Belo Horizonte","blue dark · split"],
+    ["diesel-materiais","Diesel Materiais","Curitiba","steel · center"]
+  ],
+  "g-tattoo": [
+    ["calavera-tatoo-arte-e-estilo","Calavera Tatoo Arte e Estilo","Curitiba","black · Unbounded"],
+    ["ink-art-tattoo","Ink Art Tattoo","Curitiba","navy · Cormorant"],
+    ["new-look-tattoo-studio","New Look Tattoo Studio","Belo Horizonte","cream · purple accent"],
+    ["old-tattoo-e-piercing","Old Tattoo e Piercing","Curitiba","warm · Playfair"],
+    ["magr-o-tattoo-pilarzinho","Magrão Tattoo — Pilarzinho","Curitiba","cream · Anton"],
+    ["red-hope-tattoo","RED HOPE Tattoo","Curitiba","light · Anton red"],
+    ["tattoo-brasil-bh-tatuagem-e-piercing","Tattoo Brasil BH","Belo Horizonte","black · Unbounded"],
+    ["daiss-rulous-tattoo-studio","Daiss Rulous Tattoo Studio","Belo Horizonte","dark green · Bricolage"],
+    ["la-luz-de-jesus","La Luz de Jesus","Porto Alegre","dark · Space Grotesk"]
+  ]
+};
+for (const [gid, items] of Object.entries(S)) {
+  const g = document.getElementById(gid);
+  for (const [slug, nome, cidade, estilo] of items) {
+    const a = document.createElement("a");
+    a.className = "card";
+    a.href = `https://pdramos.github.io/vitrine-demos/${slug}/`;
+    a.target = "_blank";
+    a.rel = "noopener";
+    a.innerHTML = `
+      <div class="thumb">
+        <iframe src="https://pdramos.github.io/vitrine-demos/${slug}/index.html" loading="lazy" title="${nome}"></iframe>
+        <div class="zoom"></div>
+        <span class="go">abrir ↗</span>
+      </div>
+      <div class="meta">
+        <div><b>${nome}</b><small>${cidade}</small></div>
+        <span class="tag">${estilo}</span>
+      </div>`;
+    g.appendChild(a);
+  }
+}
+</script>
+</body>
+</html>
